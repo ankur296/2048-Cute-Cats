@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>使瓷砖来赢2048。 开始!</item>
+        <item>"玩不尽的。要提出更高.. 
+ 检查你能走多远.."</item>
+        <item>"邪恶不会合并瓦，使大标题。 
+ 让我们玩。"</item>
+    </string-array>
+</resources>

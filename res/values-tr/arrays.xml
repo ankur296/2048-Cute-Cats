@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Win 2048 Çini olun. Başlayın!</item>
+        <item>"Yükseköğretim yapmak için Endless Oyna .. 
+ Ne kadar Go olabilir edin .."</item>
+        <item>"Evil büyük Başlıkları olun Fayans Birleştirme olmayacaktır. 
+ adlı oyna bakalım .."</item>
+    </string-array>
+</resources>

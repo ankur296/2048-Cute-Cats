@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>勝つ2048タイルを作成します。 スタート！</item>
+        <item>"..高くするエンドレスをプレイ.. 
+ どこまであなたが行くことができます確認してください.."</item>
+        <item>"悪は大きなタイトルを作るためにタイルをマージすることはありません。 
+ 遊ぼう.."</item>
+    </string-array>
+</resources>

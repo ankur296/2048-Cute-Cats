@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Maak Tile to Win 2048. Start!</item>
+        <item>"Speel eindeloze .. om hoger te maken .. 
+ Controleer Hoe ver kun je gaan .."</item>
+        <item>"Kwaad zal niet Tegels samenvoegen om grotere titels maken. 
+ Let's Play .."</item>
+    </string-array>
+</resources>

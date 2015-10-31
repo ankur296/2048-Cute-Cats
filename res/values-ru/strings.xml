@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Установите Сервисы Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Для работы этого приложения требуется установить Сервисы Google Play.</string>
+    <string name="common_google_play_services_install_text_tablet">Для работы этого приложения требуется установить Сервисы Google Play.</string>
+    <string name="common_google_play_services_install_button">Установить</string>
+    <string name="common_google_play_services_enable_title">Включите Сервисы Google Play</string>
+    <string name="common_google_play_services_enable_text">Для работы этого приложения требуется включить Сервисы Google Play.</string>
+    <string name="common_google_play_services_enable_button">Включить</string>
+    <string name="common_google_play_services_update_title">Обновите Сервисы Google Play</string>
+    <string name="common_google_play_services_update_text">Для работы этого приложения требуется обновить Сервисы Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Ошибка сети</string>
+    <string name="common_google_play_services_network_error_text">Для работы с Google Play требуется подключение к сети.</string>
+    <string name="common_google_play_services_invalid_account_title">Недействительный аккаунт</string>
+    <string name="common_google_play_services_invalid_account_text">Этого аккаунта нет на устройстве. Выберите другой.</string>
+    <string name="common_google_play_services_unknown_issue">Неизвестная ошибка с Сервисами Google Play.</string>
+    <string name="common_google_play_services_unsupported_title">Сервисы Google Play</string>
+    <string name="common_google_play_services_unsupported_text">Сервисы Google Play, необходимые для работы некоторых приложений, не поддерживаются на вашем устройстве. Обратитесь к производителю.</string>
+    <string name="common_google_play_services_unsupported_date_text">Проверьте правильность даты, указанной на устройстве.</string>
+    <string name="common_google_play_services_update_button">Обновить</string>
+    <string name="common_signin_button_text">Войти</string>
+    <string name="common_signin_button_text_long">Войти в аккаунт Google</string>
+    <string name="auth_client_using_bad_version_title">Версия сервисов Google Play неисправна</string>
+    <string name="auth_client_needs_enabling_title">Для работы приложения требуется включить сервисы Google Play</string>
+    <string name="auth_client_needs_installation_title">Для работы приложения требуется установить сервисы Google Play</string>
+    <string name="auth_client_needs_update_title">Для работы приложения требуется обновить сервисы Google Play</string>
+    <string name="auth_client_play_services_err_notification_msg">Ошибка сервисов Google Play</string>
+    <string name="auth_client_requested_by_msg">Запрос от приложения \"%1$s\"</string>
+    <string name="hello_world">Добро пожаловать!</string>
+    <string name="action_settings">Настройки</string>
+    <string name="new_game">Новая игры</string>
+    <string name="high_score">Максимальные очки</string>
+    <string name="score">Очки</string>
+    <string name="moves">Счет</string>
+    <string name="instructions">Проведите чтобы сложить 2+2=4. Цель: 2048</string>
+    <string name="instructions_4096">Проведите чтобы сложить 2+2=4. Цель: 4096</string>
+    <string name="instructions_8192">Проведите чтобы сложить 2+2=4. Цель 8192</string>
+    <string name="you_win">Вы победили</string>
+    <string name="game_over">Вы проиграли!</string>
+    <string name="go_on">Начать новую игру</string>
+    <string name="for_now">Сейчас</string>
+    <string name="endless">Начать новую игру</string>
+    <string name="per_rec">Личный рейтинг</string>
+    <string name="achievements">Достижения</string>
+    <string name="leader">Лучшие бомбардиры</string>
+    <string name="share_us">Поделиться</string>
+    <string name="game_modes">Режимы игры</string>
+    <string name="rateus">Оценить приложение</string>
+    <string name="sound_txt">Звук</string>
+    <string name="theme_txt">Оформление</string>
+    <string name="effects_txt">Освещение</string>
+    <string name="tiles_txt">Сетка</string>
+    <string name="animation_txt">Анимация</string>
+    <string name="showtime_txt">Таймер</string>
+    <string name="moves_txt">Счетчик ходов</string>
+    <string name="select_mode">Выберите режим</string>
+    <string name="select_mode_classic">Классический</string>
+    <string name="select_mode_desc">Выбрать 2048 как максимальную ячейку</string>
+    <string name="mode_play">Играть</string>
+    <string name="share_score">Очки</string>
+    <string name="share_snap">Сохранить фото</string>
+    <string name="share_screen">Скриншот</string>
+    <string name="exit_app">Уйти</string>
+    <string name="score_game">Вы набрали <font fgcolor="#F88017">%1$d </font> очков за <font fgcolor="#F88017">%2$d </font> ходов</string>
+    <string name="cancel">Назад</string>
+    <string name="restart">Начать</string>
+    <string name="dialog_msg">Вы уверены что хотите начать новую игру?</string>
+    <string name="extra_sharetext">2048 увлекательная игра! Я рекомендую тебе.</string>
+    <string name="score_made">Ого, я набрал очков</string>
+    <string name="beat_this">"Можешь обойти меня?? 
+ Играть"</string>
+    <string name="score_captued">Набрано очков</string>
+    <string name="exit_msg">Вы уверены что хотите выйти из игры?</string>
+    <string name="no_app">Не установлены сервисы Google</string>
+    <string name="click_to">Нажмите для просмотра</string>
+    <string name="in">в</string>
+    <string name="install_app">Установить это приложение.</string>
+    <string name="new_achieveunlocked">"Поздравляю 
+ Новое достижение разблокирована"</string>
+    <string name="congrats_high">"Поздравляю 
+ Новый рекорд"</string>
+    <string name="not_connected">"Google Play услуги не связаны 
+
+ Хотите подключиться?"</string>
+</resources>

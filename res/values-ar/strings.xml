@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">‏الحصول على خدمات Google Play</string>
+    <string name="common_google_play_services_install_text_phone">‏لن يتم تشغيل هذا التطبيق بدون خدمات Google Play، والتي لا تتوفر في هاتفك.</string>
+    <string name="common_google_play_services_install_text_tablet">‏لن يتم تشغيل هذا التطبيق بدون خدمات Google Play، والتي لا تتوفر في جهازك اللوحي.</string>
+    <string name="common_google_play_services_install_button">‏الحصول على خدمات Google Play</string>
+    <string name="common_google_play_services_enable_title">‏تمكين خدمات Google Play</string>
+    <string name="common_google_play_services_enable_text">‏لن يعمل هذا التطبيق ما لم يتم تمكين خدمات Google Play.</string>
+    <string name="common_google_play_services_enable_button">‏تمكين خدمات Google Play</string>
+    <string name="common_google_play_services_update_title">‏تحديث خدمات Google Play</string>
+    <string name="common_google_play_services_update_text">‏لن يتم تشغيل هذا التطبيق ما لم تحدِّث خدمات Google Play.</string>
+    <string name="common_google_play_services_network_error_title">خطأ في الشبكة</string>
+    <string name="common_google_play_services_network_error_text">‏يتطلب الاتصال بخدمات Google Play وجود اتصال بيانات.</string>
+    <string name="common_google_play_services_invalid_account_title">حساب غير صالح</string>
+    <string name="common_google_play_services_invalid_account_text">الحساب الذي تمّ تحديده غير موجود على الجهاز. يُرجى اختيار حساب آخر.</string>
+    <string name="common_google_play_services_unknown_issue">‏حدثت مشكلة غير معروفة في خدمات Google Play.</string>
+    <string name="common_google_play_services_unsupported_title">‏خدمات Google Play</string>
+    <string name="common_google_play_services_unsupported_text">‏خدمات Google Play التي تستجيب لها بعض تطبيقاتك لا تعمل على جهازك. يُرجى الاتصال بجهة التصنيع للحصول على المساعدة.</string>
+    <string name="common_google_play_services_unsupported_date_text">يبدو أن التاريخ على الجهاز غير صحيح. الرجاء التحقق من التاريخ على الجهاز.</string>
+    <string name="common_google_play_services_update_button">تحديث</string>
+    <string name="common_signin_button_text">تسجيل الدخول</string>
+    <string name="common_signin_button_text_long">‏تسجيل الدخول باستخدام Google</string>
+    <string name="auth_client_using_bad_version_title">‏يحاول أحد التطبيقات استخدام إصدار غير صالح من خدمات Google Play.</string>
+    <string name="auth_client_needs_enabling_title">‏يتطلب أحد التطبيقات تمكين خدمات Google Play.</string>
+    <string name="auth_client_needs_installation_title">‏يتطلب أحد التطبيقات تثبيت خدمات Google Play.</string>
+    <string name="auth_client_needs_update_title">‏يتطلب أحد التطبيقات تحديث خدمات Google Play.</string>
+    <string name="auth_client_play_services_err_notification_msg">‏خطأ في خدمات Google Play</string>
+    <string name="auth_client_requested_by_msg">تم الطلب عن طريق %1$s</string>
+    <string name="admob_unit_id">a1536694613007d</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">مرحبا العالم!</string>
+    <string name="action_settings">إعدادات</string>
+    <string name="new_game">لعبة جديدة</string>
+    <string name="high_score">درجة عالية</string>
+    <string name="score">نتيجة</string>
+    <string name="moves">التحركات:</string>
+    <string name="instructions">انتقد التحرك. 2 + 2 = 4. أيادي 2048.</string>
+    <string name="instructions_4096">انتقد التحرك. 2 + 2 = 4. أيادي 4096.</string>
+    <string name="instructions_8192">انتقد التحرك. 2 + 2 = 4. أيادي 8192.</string>
+    <string name="you_win">!لك الفوز</string>
+    <string name="game_over">!أكثر من لعبة</string>
+    <string name="go_on">بدء لعبة جديدة</string>
+    <string name="for_now">في الوقت الراهن</string>
+    <string name="endless">بدء لعبة جديدة</string>
+    <string name="per_rec">الوثائق الشخصية</string>
+    <string name="achievements">الإنجازات</string>
+    <string name="leader">المتصدرين</string>
+    <string name="share_us">حصة</string>
+    <string name="game_modes">وسائط</string>
+    <string name="rateus">معدل</string>
+    <string name="sound_txt">الصوت:</string>
+    <string name="theme_txt">الموضوع:</string>
+    <string name="effects_txt">تأثيرات الضوء:</string>
+    <string name="tiles_txt">البلاط المستخدمة:</string>
+    <string name="animation_txt">الرسوم المتحركة:</string>
+    <string name="showtime_txt">الموقت:</string>
+    <string name="moves_txt">تم التحركات:</string>
+    <string name="select_mode">تحديد الوضع:</string>
+    <string name="select_mode_classic">كلاسيكي</string>
+    <string name="select_mode_desc">في محاولة لجعل عنوان 2048</string>
+    <string name="mode_play">اللعب</string>
+    <string name="share_score">نتيجة</string>
+    <string name="share_snap">أسر</string>
+    <string name="share_screen">شاشة</string>
+    <string name="exit_app">خروج</string>
+    <string name="score_game">لقد سجل <font fgcolor="#F88017">%2$d </font> في <font fgcolor="#F88017">%1$d </font> التحركات.</string>
+    <string name="cancel">إلغاء</string>
+    <string name="restart">بداية</string>
+    <string name="dialog_msg">هل تريد أن تبدأ لعبة جديدة؟</string>
+    <string name="extra_sharetext">2048 تطبيق رهيبة. أنصحك الاستخدام.</string>
+    <string name="score_made">نجاح باهر أنا قادرة على تسجيل</string>
+    <string name="beat_this">يمكنك تغلب على هذا! لعب</string>
+    <string name="score_captued">يسجل القبض</string>
+    <string name="exit_msg">هل تريد الخروج من اللعبة؟</string>
+    <string name="no_app">تثبيت أي تطبيق دعم عملية سهم</string>
+    <string name="click_to">انقر فوق عرض</string>
+    <string name="in">في</string>
+    <string name="install_app">تثبيت هذا التطبيق.</string>
+    <string name="new_achieveunlocked">"كونغر 
+ اتس إنجازا جديدا مقفلة"</string>
+    <string name="congrats_high">"كونغر 
+ اتس أعلى الدرجات جديدة"</string>
+    <string name="not_connected">"لا ترتبط خدمات جوجل اللعب!
+ 
+  هل تريد الاتصال؟"</string>
+</resources>

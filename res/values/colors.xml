@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_pink">#E91E63</color>
+    <color name="text_score_white">#f9f6f2</color>
+    <color name="text_brown">#d6cdc4</color>
+    <color name="background">#9C27B0</color>
+	<color name="holo_blue_dark">#ff0099cc</color>
+    <color name="best_red">#b20000</color>
+</resources>

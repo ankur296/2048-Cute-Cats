@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Pobierz Usługi Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Ta aplikacja nie będzie działać bez Usług Google Play, których nie masz na telefonie.</string>
+    <string name="common_google_play_services_install_text_tablet">Ta aplikacja nie będzie działać bez Usług Google Play, których nie masz na tablecie.</string>
+    <string name="common_google_play_services_install_button">Pobierz Usługi Google Play</string>
+    <string name="common_google_play_services_enable_title">Włącz Usługi Google Play</string>
+    <string name="common_google_play_services_enable_text">Ta aplikacja nie będzie działać, jeśli nie włączysz Usług Google Play.</string>
+    <string name="common_google_play_services_enable_button">Włącz Usługi Google Play</string>
+    <string name="common_google_play_services_update_title">Aktualizuj Usługi Google Play</string>
+    <string name="common_google_play_services_update_text">Ta aplikacja nie będzie działać, jeśli nie zaktualizujesz Usług Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Błąd sieci</string>
+    <string name="common_google_play_services_network_error_text">Korzystanie z usług Google Play wymaga połączenia z internetem.</string>
+    <string name="common_google_play_services_invalid_account_title">Nieprawidłowe konto</string>
+    <string name="common_google_play_services_invalid_account_text">Podanego konta nie ma na tym urządzeniu. Wybierz inne konto.</string>
+    <string name="common_google_play_services_unknown_issue">Nieznany problem z Usługami Google Play.</string>
+    <string name="common_google_play_services_unsupported_title">Usługi Google Play</string>
+    <string name="common_google_play_services_unsupported_text">Usługi Google Play, od których zależy działanie niektórych aplikacji, nie są obsługiwane na Twoim urządzeniu. Skontaktuj się z producentem, by uzyskać pomoc.</string>
+    <string name="common_google_play_services_unsupported_date_text">Data ustawiona na urządzeniu wydaje się nieprawidłowa. Sprawdź datę ustawioną na urządzeniu.</string>
+    <string name="common_google_play_services_update_button">Aktualizuj</string>
+    <string name="common_signin_button_text">Zaloguj się</string>
+    <string name="common_signin_button_text_long">Zaloguj się przez Google</string>
+    <string name="auth_client_using_bad_version_title">Aplikacja próbowała skorzystać z nieprawidłowej wersji Usług Google Play.</string>
+    <string name="auth_client_needs_enabling_title">Aplikacja wymaga włączenia Usług Google Play.</string>
+    <string name="auth_client_needs_installation_title">Aplikacja wymaga zainstalowania Usług Google Play.</string>
+    <string name="auth_client_needs_update_title">Aplikacja wymaga aktualizacji Usług Google Play.</string>
+    <string name="auth_client_play_services_err_notification_msg">Błąd usług Google Play</string>
+    <string name="auth_client_requested_by_msg">Żądanie z aplikacji %1$s</string>
+    <string name="admob_unit_id">a1536694613007d</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">Witaj świecie!</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="new_game">Nowa gra</string>
+    <string name="high_score">Wysoki wynik</string>
+    <string name="score">wynik</string>
+    <string name="moves">Odeszli:</string>
+    <string name="instructions">Przesuń palcem, aby przejść. 2 + 2 = 4. Zasięg 2048.</string>
+    <string name="instructions_4096">Przesuń palcem, aby przejść. 2 + 2 = 4. Zasięg 4096.</string>
+    <string name="instructions_8192">Przesuń palcem, aby przejść. 2 + 2 = 4. Zasięg 8192.</string>
+    <string name="you_win">Wygrywasz!</string>
+    <string name="game_over">Game Over!</string>
+    <string name="go_on">Rozpocznij nową grę</string>
+    <string name="for_now">Na razie</string>
+    <string name="endless">Rozpocznij nową grę</string>
+    <string name="per_rec">Osobiste rekordy</string>
+    <string name="achievements">Osiągnięcia</string>
+    <string name="leader">Ranking</string>
+    <string name="share_us">Udział</string>
+    <string name="game_modes">Tryby</string>
+    <string name="rateus">Stawka</string>
+    <string name="sound_txt">Dźwięk:</string>
+    <string name="theme_txt">Temat:</string>
+    <string name="effects_txt">Efekty świetlne:</string>
+    <string name="tiles_txt">Płytki używany:</string>
+    <string name="animation_txt">Animacja:</string>
+    <string name="showtime_txt">Zegar:</string>
+    <string name="moves_txt">Odeszli Sporządzono:</string>
+    <string name="select_mode">Wybierz tryb:</string>
+    <string name="select_mode_classic">Klasyczny</string>
+    <string name="select_mode_desc">Spróbuj zrobić Tytuł 2048</string>
+    <string name="mode_play">Odtwórz</string>
+    <string name="share_score">Wynik</string>
+    <string name="share_snap">Zdobycz</string>
+    <string name="share_screen">Ekran</string>
+    <string name="exit_app">Wyjście</string>
+    <string name="score_game">Masz bramki <font fgcolor="#F88017">%1$d </font> w <font fgcolor="#F88017">%2$d </font>" ruchów. "</string>
+    <string name="cancel">Anulować</string>
+    <string name="restart">Początek</string>
+    <string name="dialog_msg">Czy chcesz rozpocząć nową grę?</string>
+    <string name="extra_sharetext">2048 jest niesamowite aplikacji. Polecam używanie.</string>
+    <string name="score_made">wow jestem w stanie zdobyć</string>
+    <string name="beat_this">"można pokonać ten !!! 
+ PLAY"</string>
+    <string name="score_captued">gola zdobył</string>
+    <string name="exit_msg">chcesz wyjść z gry?</string>
+    <string name="no_app">żadna aplikacja zainstalowana wspieranie operacji akcji</string>
+    <string name="click_to">kliknij, aby zobaczyć</string>
+    <string name="in">w</string>
+    <string name="install_app">zainstalować tę aplikację.</string>
+    <string name="new_achieveunlocked">"gratulacje 
+ nowa osiągnięcie odblokowane"</string>
+    <string name="congrats_high">"gratulacje 
+ nowego najlepszych wyników"</string>
+    <string name="not_connected">"Usługi Google Play nie są podłączone! 
+ 
+ chcesz się połączyć?"</string>
+</resources>

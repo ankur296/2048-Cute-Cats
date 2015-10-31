@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+  <string name="app_id">594501856209</string>
+  <string name="achievement_ziggy">CgkI0dfJ2KYREAIQAA</string>
+  <string name="achievement_izzy">CgkI0dfJ2KYREAIQAQ</string>
+  <string name="achievement_tiger">CgkI0dfJ2KYREAIQAg</string>
+  <string name="achievement_ruby">CgkI0dfJ2KYREAIQAw</string>
+  <string name="achievement_simba">CgkI0dfJ2KYREAIQBA</string>
+  <string name="achievement_milo">CgkI0dfJ2KYREAIQBQ</string>
+  <string name="achievement_charlie">CgkI0dfJ2KYREAIQBg</string>
+  <string name="achievement_smokey">CgkI0dfJ2KYREAIQBw</string>
+  <string name="achievement_max">CgkI0dfJ2KYREAIQCA</string>
+  <string name="achievement_leo">CgkI0dfJ2KYREAIQCQ</string>
+  <string name="leaderboard_leading_cats_n_lions">CgkI0dfJ2KYREAIQCw</string>
+</resources>

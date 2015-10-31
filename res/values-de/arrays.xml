@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Machen Tile to Win 2048. Starten!</item>
+        <item>"Spielen Endless .. Um Höhere machen .. 
+ Überprüfen Wie weit kann man gehen .."</item>
+        <item>"Das Böse wird nicht zusammenführen, um größere Fliesen Titel machen. 
+ Lassen Sie uns spielen .."</item>
+    </string-array>
+</resources>

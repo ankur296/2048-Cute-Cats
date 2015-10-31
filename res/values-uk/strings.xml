@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Установити Google Play Послуги</string>
+    <string name="common_google_play_services_install_text_phone">Ця програма не запуститься без Google Play Послуг, яких немає у вашому телефоні.</string>
+    <string name="common_google_play_services_install_text_tablet">Ця програма не запуститься без Google Play Послуг, яких немає на вашому планшетному ПК.</string>
+    <string name="common_google_play_services_install_button">Установити Google Play Послуги</string>
+    <string name="common_google_play_services_enable_title">Увімкнути Google Play Послуги</string>
+    <string name="common_google_play_services_enable_text">Ця програма не працюватиме, поки ви не ввімкнете Google Play Послуги.</string>
+    <string name="common_google_play_services_enable_button">Увімкнути Google Play Послуги</string>
+    <string name="common_google_play_services_update_title">Оновити Google Play Послуги</string>
+    <string name="common_google_play_services_update_text">Ця програма не запуститься, поки ви не оновите Google Play Послуги.</string>
+    <string name="common_google_play_services_network_error_title">Помилка мережі</string>
+    <string name="common_google_play_services_network_error_text">Для під’єднання до сервісів Google Play потрібне з’єднання з мережею.</string>
+    <string name="common_google_play_services_invalid_account_title">Недійсний обліковий запис</string>
+    <string name="common_google_play_services_invalid_account_text">Указаний обліковий запис не існує на цьому пристрої. Виберіть інший обліковий запис.</string>
+    <string name="common_google_play_services_unknown_issue">Google Play Послуги – невідома проблема.</string>
+    <string name="common_google_play_services_unsupported_title">Сервіси Google Play</string>
+    <string name="common_google_play_services_unsupported_text">Ваш пристрій не підтримує Сервіси Google Play, від яких залежить робота деяких програм. Зверніться по допомогу до виробника.</string>
+    <string name="common_google_play_services_unsupported_date_text">Схоже, на пристрої вказано неправильну дату. Перевірте її.</string>
+    <string name="common_google_play_services_update_button">Оновити</string>
+    <string name="common_signin_button_text">Увійти</string>
+    <string name="common_signin_button_text_long">Увійти в обл.запис Google</string>
+    <string name="auth_client_using_bad_version_title">Програма спробувала застосувати хибну версію Сервісів Google Play.</string>
+    <string name="auth_client_needs_enabling_title">Щоб програма працювала, потрібно ввімкнути Сервіси Google Play.</string>
+    <string name="auth_client_needs_installation_title">Щоб програма працювала, потрібно встановити Сервіси Google Play.</string>
+    <string name="auth_client_needs_update_title">Щоб програма працювала, потрібно оновити Сервіси Google Play.</string>
+    <string name="auth_client_play_services_err_notification_msg">Помилка Сервісів Google Play</string>
+    <string name="auth_client_requested_by_msg">Запит від програми %1$s</string>
+    <string name="action_settings">Налаштування</string>
+    <string name="new_game">Нова гра</string>
+    <string name="high_score">Висока оцінка</string>
+    <string name="score">РАХУНОК</string>
+    <string name="moves">Ходи:</string>
+    <string name="instructions">Проведіть для переміщення. 2 + 2 = 4. Reach 2048.</string>
+    <string name="instructions_4096">Проведіть для переміщення. 2 + 2 = 4. Reach 4096.</string>
+    <string name="instructions_8192">Проведіть для переміщення. 2 + 2 = 4. Reach 8192.</string>
+    <string name="you_win">Ви виграли!</string>
+    <string name="game_over">Гра закінчена!</string>
+    <string name="go_on">Почніть нову гру</string>
+    <string name="for_now">Зараз</string>
+    <string name="endless">Почніть нову гру</string>
+    <string name="per_rec">Послужний список</string>
+    <string name="achievements">Досягнення</string>
+    <string name="leader">Лідери</string>
+    <string name="share_us">Частка</string>
+    <string name="game_modes">Режими</string>
+    <string name="rateus">Швидкість</string>
+    <string name="sound_txt">Звук:</string>
+    <string name="theme_txt">Стиль:</string>
+    <string name="effects_txt">Світлові ефекти:</string>
+    <string name="tiles_txt">Плитка мовами:</string>
+    <string name="animation_txt">Анімація:</string>
+    <string name="showtime_txt">Таймер:</string>
+    <string name="moves_txt">Перехід шкоди:</string>
+    <string name="select_mode">Виберіть режим:</string>
+    <string name="select_mode_classic">Класичний</string>
+    <string name="select_mode_desc">Спробуйте зробити Тема 2048</string>
+    <string name="mode_play">Грати</string>
+    <string name="share_score">Рахунок</string>
+    <string name="share_snap">Захоплення</string>
+    <string name="share_screen">Екран</string>
+    <string name="exit_app">Вихід</string>
+    <string name="score_game">Вам пощастило <font fgcolor="#F88017">%1$d </font> У <font fgcolor="#F88017">%2$d </font>" Переміщення "</string>
+    <string name="cancel">Скасувати</string>
+    <string name="restart">Початок</string>
+    <string name="dialog_msg">Чи хочете ви, щоб почати нову гру?</string>
+    <string name="extra_sharetext">2048 є дивним додаток. я рекомендую вам використовувати.</string>
+    <string name="score_made">нічого собі я зміг забити</string>
+    <string name="beat_this">Ви можете розбити це !!! П гра</string>
+    <string name="score_captued">забити захопили</string>
+    <string name="exit_msg">Ви хочете вийти з гри?</string>
+    <string name="no_app">додаток не встановлено підтримки операції акцій</string>
+    <string name="click_to">переглянути</string>
+    <string name="in">в</string>
+    <string name="install_app">встановити цей додаток.</string>
+    <string name="new_achieveunlocked">"вітаю 
+ Нове досягнення розблокована"</string>
+    <string name="congrats_high">"вітаю 
+ новий рекорд"</string>
+    <string name="not_connected">"Google Play послуги не пов'язані! 
+ 
+ ви хочете підключитися?"</string>
+</resources>

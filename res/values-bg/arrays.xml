@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Уверете 2048 Плочка за Win. Започнете!</item>
+        <item>"Играй безкраен .. За да направите висше .. 
+ проверят колко далеч можете да отидете .."</item>
+        <item>"Evil Tiles не ще се слеят, за да направим по-големи дялове. 
+ Да играем .."</item>
+    </string-array>
+</resources>

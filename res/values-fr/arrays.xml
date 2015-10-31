@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Assurez-2048 tuiles pour gagner. Commencez!</item>
+        <item>Jouer sans fin .. Pour faire supérieur .. n vérifier dans quelle mesure vous pouvez aller ..</item>
+        <item>Mal tuiles ne sera pas de fusion pour faire de plus grands titres. n Jouons ..</item>
+    </string-array>
+</resources>

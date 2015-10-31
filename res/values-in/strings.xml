@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Dapatkan layanan Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Aplikasi ini tidak akan berjalan tanpa layanan Google Play, yang tidak ada di ponsel Anda.</string>
+    <string name="common_google_play_services_install_text_tablet">Aplikasi ini tidak akan berjalan tanpa layanan Google Play, yang tidak ada di tablet Anda.</string>
+    <string name="common_google_play_services_install_button">Dapatkan layanan Google Play</string>
+    <string name="common_google_play_services_enable_title">Aktifkan layanan Google Play</string>
+    <string name="common_google_play_services_enable_text">Aplikasi ini tidak akan bekerja sampai Anda mengaktifkan layanan Google Play.</string>
+    <string name="common_google_play_services_enable_button">Aktifkan layanan Google Play</string>
+    <string name="common_google_play_services_update_title">Perbarui layanan Google Play</string>
+    <string name="common_google_play_services_update_text">Aplikasi ini tidak akan berjalan sampai Anda memperbarui layanan Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Kesalahan Jaringan</string>
+    <string name="common_google_play_services_network_error_text">Sambungan data diperlukan untuk tersambung ke layanan Google Play.</string>
+    <string name="common_google_play_services_invalid_account_title">Akun Tidak Valid</string>
+    <string name="common_google_play_services_invalid_account_text">Akun yang ditentukan tidak ada di perangkat ini. Pilih akun lain.</string>
+    <string name="common_google_play_services_unknown_issue">Masalah tidak diketahui pada layanan Google Play.</string>
+    <string name="common_google_play_services_unsupported_title">Layanan Google Play</string>
+    <string name="common_google_play_services_unsupported_text">Layanan Google Play, yang diandalkan oleh beberapa aplikasi Anda, tidak didukung oleh perangkat Anda. Hubungi pabrikan untuk mendapatkan bantuan.</string>
+    <string name="common_google_play_services_unsupported_date_text">Tampaknya tanggal di perangkat salah. Periksa tanggal di perangkat.</string>
+    <string name="common_google_play_services_update_button">Perbarui</string>
+    <string name="common_signin_button_text">Masuk</string>
+    <string name="common_signin_button_text_long">Masuk dengan Google</string>
+    <string name="auth_client_using_bad_version_title">Aplikasi mencoba menggunakan versi Layanan Google Play yang rusak.</string>
+    <string name="auth_client_needs_enabling_title">Aplikasi membutuhkan Layanan Google Play untuk dapat diaktifkan.</string>
+    <string name="auth_client_needs_installation_title">Aplikasi membutuhkan pemasangan Layanan Google Play.</string>
+    <string name="auth_client_needs_update_title">Aplikasi membutuhkan pembaruan untuk Layanan Google Play.</string>
+    <string name="auth_client_play_services_err_notification_msg">Kesalahan layanan Google Play</string>
+    <string name="auth_client_requested_by_msg">Diminta oleh %1$s</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">Halo dunia!</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="new_game">Permainan Baru</string>
+    <string name="high_score">SCORE TINGGI</string>
+    <string name="score">SCORE</string>
+    <string name="moves">Moves:</string>
+    <string name="instructions">Geser untuk bergerak. 2 + 2 = 4 Jangkauan 2048.</string>
+    <string name="instructions_4096">Geser untuk bergerak. 2 + 2 = 4 Jangkauan 4096.</string>
+    <string name="instructions_8192">Geser untuk bergerak. 2 + 2 = 4 Jangkauan 8192.</string>
+    <string name="you_win">Anda Menang!</string>
+    <string name="game_over">Baru Over!</string>
+    <string name="go_on">Mulai Permainan Baru</string>
+    <string name="for_now">Untuk saat ini</string>
+    <string name="endless">Mulai Permainan Baru</string>
+    <string name="per_rec">Catatan Pribadi</string>
+    <string name="achievements">Medali</string>
+    <string name="leader">LeaderBoard</string>
+    <string name="share_us">Berbagi</string>
+    <string name="game_modes">Mode</string>
+    <string name="rateus">Tingkat</string>
+    <string name="sound_txt">Suara:</string>
+    <string name="theme_txt">Tema:</string>
+    <string name="effects_txt">Efek cahaya:</string>
+    <string name="tiles_txt">Ubin Digunakan:</string>
+    <string name="animation_txt">Animasi:</string>
+    <string name="showtime_txt">Timer:</string>
+    <string name="moves_txt">Moves Selesai:</string>
+    <string name="select_mode">Pilih Mode:</string>
+    <string name="select_mode_classic">Klasik</string>
+    <string name="select_mode_desc">Cobalah untuk membuat Judul 2048</string>
+    <string name="mode_play">Bermain</string>
+    <string name="share_score">Skor</string>
+    <string name="share_snap">Tangkap</string>
+    <string name="share_screen">Layar</string>
+    <string name="exit_app">Keluar</string>
+    <string name="score_game">Anda telah mencetak <font fgcolor="#F88017">%1$d </font> di <font fgcolor="#F88017">%2$d </font> bergerak</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="restart">Mulai</string>
+    <string name="dialog_msg">Apakah Anda Ingin Memulai permainan baru?</string>
+    <string name="extra_sharetext">2048 adalah aplikasi yang mengagumkan. Saya sarankan Anda untuk menggunakan.</string>
+    <string name="score_made">Wow saya bisa Skor</string>
+    <string name="beat_this">"Dapatkah Anda Mengalahkan ini !!! 
+ Putar"</string>
+    <string name="score_captued">Skor Ditangkap</string>
+    <string name="exit_msg">Apakah Anda ingin keluar dari Baru?</string>
+</resources>

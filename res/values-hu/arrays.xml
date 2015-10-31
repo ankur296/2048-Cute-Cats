@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Legyen Tile a Win 2048. Start!</item>
+        <item>"Játssz Végtelen .. Ahhoz, hogy magasabb .. 
+ Ellenőrizze Milyen messzire tud menni .."</item>
+        <item>"Evil nem Merge csempe, hogy nagyobb címek. 
+ Játsszunk .."</item>
+    </string-array>
+</resources>

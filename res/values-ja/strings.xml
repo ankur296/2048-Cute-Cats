@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Play開発者サービスの入手</string>
+    <string name="common_google_play_services_install_text_phone">このアプリの実行にはGoogle Play開発者サービスが必要ですが、お使いの携帯端末にはインストールされていません。</string>
+    <string name="common_google_play_services_install_text_tablet">このアプリの実行にはGoogle Play開発者サービスが必要ですが、お使いのタブレットにはインストールされていません。</string>
+    <string name="common_google_play_services_install_button">Play開発者サービスの入手</string>
+    <string name="common_google_play_services_enable_title">Play開発者サービスの有効化</string>
+    <string name="common_google_play_services_enable_text">このアプリの実行には、Google Play開発者サービスの有効化が必要です。</string>
+    <string name="common_google_play_services_enable_button">Play開発者サービスの有効化</string>
+    <string name="common_google_play_services_update_title">Play開発者サービスの更新</string>
+    <string name="common_google_play_services_update_text">このアプリの実行には、Google Play開発者サービスの更新が必要です。</string>
+    <string name="common_google_play_services_network_error_title">ネットワークエラー</string>
+    <string name="common_google_play_services_network_error_text">Google Play開発者サービスに接続するには、データ接続が必要です。</string>
+    <string name="common_google_play_services_invalid_account_title">無効なアカウント</string>
+    <string name="common_google_play_services_invalid_account_text">指定したアカウントはこの端末上に存在しません。別のアカウントを選択してください。</string>
+    <string name="common_google_play_services_unknown_issue">Google Play開発者サービスで原因不明の問題が発生しました。</string>
+    <string name="common_google_play_services_unsupported_title">Google Play開発者サービス</string>
+    <string name="common_google_play_services_unsupported_text">一部のアプリが使用しているGoogle Play開発者サービスは、お使いの端末ではサポートされていません。詳しくは、端末メーカーまでお問い合わせください。</string>
+    <string name="common_google_play_services_unsupported_date_text">端末上の日付が正しくないようです。端末上の日付をご確認ください。</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_signin_button_text">ログイン</string>
+    <string name="common_signin_button_text_long">Googleでログイン</string>
+    <string name="auth_client_using_bad_version_title">アプリはGoogle Play開発者サービスの不適切なバージョンを使用しようとしました。</string>
+    <string name="auth_client_needs_enabling_title">アプリではGoogle Play開発者サービスを有効にする必要があります。</string>
+    <string name="auth_client_needs_installation_title">アプリではGoogle Play開発者サービスをインストールする必要があります。</string>
+    <string name="auth_client_needs_update_title">アプリではGoogle Play開発者サービスをアップデートする必要があります。</string>
+    <string name="auth_client_play_services_err_notification_msg">Google Play開発者サービスのエラー</string>
+    <string name="auth_client_requested_by_msg">%1$sによるリクエスト</string>
+    <string name="admob_unit_id">a1536694613007d</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">世界こんにちは！</string>
+    <string name="action_settings">[設定]</string>
+    <string name="new_game">新しいゲーム</string>
+    <string name="high_score">ハイスコア</string>
+    <string name="score">スコア</string>
+    <string name="moves">移動：</string>
+    <string name="instructions">移動するにスワイプ。 = 4 2 +2。2048リーチ。</string>
+    <string name="instructions_4096">移動するにスワイプ。 = 4 2 +2。4096リーチ。</string>
+    <string name="instructions_8192">移動するにスワイプ。 = 4 2 +2 8192リーチ。</string>
+    <string name="you_win">あなたの勝ち！</string>
+    <string name="game_over">ゲームオーバー！</string>
+    <string name="go_on">新しいゲームを開始します</string>
+    <string name="for_now">今のところ</string>
+    <string name="endless">新しいゲームを開始します</string>
+    <string name="per_rec">個人記録</string>
+    <string name="achievements">実績</string>
+    <string name="leader">得点王</string>
+    <string name="share_us">シェア</string>
+    <string name="game_modes">モード</string>
+    <string name="rateus">率</string>
+    <string name="sound_txt">サウンド：</string>
+    <string name="theme_txt">テーマ：</string>
+    <string name="effects_txt">ライトエフェクト：</string>
+    <string name="tiles_txt">タイルは、使用される：</string>
+    <string name="animation_txt">アニメーション：</string>
+    <string name="showtime_txt">タイマー：</string>
+    <string name="moves_txt">移動は完了。</string>
+    <string name="select_mode">モードを選択します。</string>
+    <string name="select_mode_classic">クラシック</string>
+    <string name="select_mode_desc">タイトル2048を作ってみる</string>
+    <string name="mode_play">プレイ</string>
+    <string name="share_score">スコア</string>
+    <string name="share_snap">キャプチャー</string>
+    <string name="share_screen">画面</string>
+    <string name="exit_app">出口</string>
+    <string name="score_game">あなたは<font fgcolor="#F88017">%1$d </font>移動で<font fgcolor="#F88017">%2$d </font>"得点している。 "</string>
+    <string name="cancel">キャンセル</string>
+    <string name="restart">スタート</string>
+    <string name="dialog_msg">あなたが新しいゲームを開始しますか？</string>
+    <string name="extra_sharetext">2048は素晴らしいアプリケーションです。 私はあなたが使用することをお勧めします。</string>
+    <string name="score_made">うわー、私は得点することができる午前</string>
+    <string name="beat_this">"あなたはこれを打つことができる！ 
+ 個の遊び"</string>
+    <string name="score_captued">スコア捕獲さ</string>
+    <string name="exit_msg">あなたがゲームを終了しますか？</string>
+    <string name="no_app">られたアプリケーションは、共有操作をサポートするインストールされていません</string>
+    <string name="click_to">クリックして表示</string>
+    <string name="in">中に</string>
+    <string name="install_app">このアプリケーションをインストールしてください。</string>
+    <string name="new_achieveunlocked">"おめでとう 
+ は新しい成果は、ロック解除"</string>
+    <string name="congrats_high">おめでとうn は新しいハイスコア</string>
+    <string name="not_connected">"グーグルプレイサービスが接続されていない！ 
+ 
+ 接続したいのですか？"</string>
+</resources>

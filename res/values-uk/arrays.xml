@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Зробити 2048 Плитка для Win. Старт!</item>
+        <item>"Грати Endless .. Щоб Вища .. 
+ Перевірте Як далеко ви можете йти .."</item>
+        <item>"Зло Плитка не злиття зробити великі заголовки. 
+ Давайте грати .."</item>
+    </string-array>
+</resources>

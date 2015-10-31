@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Ujistěte se dlaždice na Win 2048. Začněte!</item>
+        <item>"Zahrajte si Endless .. Chcete-li vyšší .. 
+ Podívejte se, jak daleko můžete jít .."</item>
+        <item>"Zlo není sloučit dlažby, aby se větší tituly. 
+ Pojďme si hrát .."</item>
+    </string-array>
+</resources>

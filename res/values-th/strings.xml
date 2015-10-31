@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">รับบริการ Google Play</string>
+    <string name="common_google_play_services_install_text_phone">แอปพลิเคชันนี้จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งไม่มีในโทรศัพท์ของคุณ</string>
+    <string name="common_google_play_services_install_text_tablet">แอปพลิเคชันนี้จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งไม่มีในแท็บเล็ตของคุณ</string>
+    <string name="common_google_play_services_install_button">รับบริการ Google Play</string>
+    <string name="common_google_play_services_enable_title">เปิดใช้งานบริการ Google Play</string>
+    <string name="common_google_play_services_enable_text">แอปพลิเคชันนี้จะไม่ทำงานจนกว่าคุณจะเปิดใช้งานบริการ Google Play</string>
+    <string name="common_google_play_services_enable_button">เปิดใช้งานบริการ Google Play</string>
+    <string name="common_google_play_services_update_title">อัปเดตบริการ Google Play</string>
+    <string name="common_google_play_services_update_text">แอปพลิเคชันนี้จะไม่ทำงานจนกว่าคุณจะอัปเดตบริการ Google Play</string>
+    <string name="common_google_play_services_network_error_title">ข้อผิดพลาดของเครือข่าย</string>
+    <string name="common_google_play_services_network_error_text">ต้องมีการเขื่อมต่อข้อมูลเพื่อเชื่อมต่อกับบริการ Google Play</string>
+    <string name="common_google_play_services_invalid_account_title">บัญชีไม่ถูกต้อง</string>
+    <string name="common_google_play_services_invalid_account_text">บัญชีที่ระบุไม่มีอยู่บนอุปกรณ์นี้ โปรดเลือกบัญชีอื่น</string>
+    <string name="common_google_play_services_unknown_issue">ปัญหาที่ไม่รู้จักของบริการ Google Play</string>
+    <string name="common_google_play_services_unsupported_title">บริการ Google Play</string>
+    <string name="common_google_play_services_unsupported_text">บริการ Google Play ซึ่งใช้งานในบางแอปพลิเคชัน ไม่ได้รับการสนับสนุนโดยอุปกรณ์ของคุณ โปรดติดต่อผู้ผลิตเพื่อขอรับความช่วยเหลือ</string>
+    <string name="common_google_play_services_unsupported_date_text">วันที่บนอุปกรณ์ไม่ถูกต้อง โปรดตรวจสอบวันที่บนอุปกรณ์</string>
+    <string name="common_google_play_services_update_button">อัปเดต</string>
+    <string name="common_signin_button_text">ลงชื่อใช้</string>
+    <string name="common_signin_button_text_long">ลงชื่อเข้าใช้ด้วย Google</string>
+    <string name="auth_client_using_bad_version_title">แอปพลิเคชันหนึ่งพยายามใช้เวอร์ชันที่ไม่เหมาะสมของบริการ Google Play</string>
+    <string name="auth_client_needs_enabling_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีบริการ Google Play เพื่อเปิดใช้งาน</string>
+    <string name="auth_client_needs_installation_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีการติดตั้งบริการ Google Play</string>
+    <string name="auth_client_needs_update_title">แอปพลิเคชันหนึ่งจำเป็นต้องมีการอัปเดตสำหรับบริการ Google Play</string>
+    <string name="auth_client_play_services_err_notification_msg">ข้อผิดพลาดของบริการ Google Play</string>
+    <string name="auth_client_requested_by_msg">ขอโดย %1$s</string>
+    <string name="admob_unit_id">a1536694613007d</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">สวัสดีชาวโลก</string>
+    <string name="action_settings">การตั้งค่า</string>
+    <string name="new_game">เกมใหม่</string>
+    <string name="high_score">คะแนนสูง</string>
+    <string name="score">คะแนน</string>
+    <string name="moves">ย้าย:</string>
+    <string name="instructions">รูดที่จะย้าย 2 + 2 = 4. การเข้าถึง 2048</string>
+    <string name="instructions_4096">รูดที่จะย้าย 2 + 2 = 4. การเข้าถึง 4096</string>
+    <string name="instructions_8192">รูดที่จะย้าย 2 + 2 = 4. การเข้าถึง 8192</string>
+    <string name="you_win">คุณชนะ!</string>
+    <string name="game_over">จบเกม!</string>
+    <string name="go_on">เริ่มเกมใหม่</string>
+    <string name="for_now">สำหรับตอนนี้</string>
+    <string name="endless">เริ่มเกมใหม่</string>
+    <string name="per_rec">ประวัติส่วนตัว</string>
+    <string name="achievements">ความสำเร็จ</string>
+    <string name="leader">ลีดเดอร์</string>
+    <string name="share_us">ส่วนแบ่ง</string>
+    <string name="game_modes">โหมด</string>
+    <string name="rateus">อัตรา</string>
+    <string name="sound_txt">เสียง:</string>
+    <string name="theme_txt">รูปแบบ:</string>
+    <string name="effects_txt">ผล แสง:</string>
+    <string name="tiles_txt">กระเบื้องที่ใช้:</string>
+    <string name="animation_txt">แอนิเมชั่:</string>
+    <string name="showtime_txt">เวลา:</string>
+    <string name="moves_txt">ย้ายเสร็จ:</string>
+    <string name="select_mode">เลือกโหมด</string>
+    <string name="select_mode_classic">คลาสสิก</string>
+    <string name="select_mode_desc">พยายามที่จะทำให้ชื่อ 2048</string>
+    <string name="mode_play">เล่น</string>
+    <string name="share_score">คะแนน</string>
+    <string name="share_snap">การจับกุม</string>
+    <string name="share_screen">จอภาพ</string>
+    <string name="exit_app">ทางออก</string>
+    <string name="score_game">คุณมีคะแนน <font fgcolor="#F88017">%1$d </font> ใน <font fgcolor="#F88017">%2$d </font>" เคลื่อนไหว "</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="restart">เริ่มต้น</string>
+    <string name="dialog_msg">คุณต้องการที่จะเริ่มเกมใหม่ได้หรือไม่</string>
+    <string name="extra_sharetext">2048 เป็นโปรแกรมที่น่ากลัว ฉันขอแนะนำให้คุณใช้</string>
+    <string name="score_made">ว้าวฉันสามารถทำคะแนน</string>
+    <string name="beat_this">คุณสามารถเอาชนะนี้ !!! เล่น</string>
+    <string name="score_captued">คะแนนจับ</string>
+    <string name="exit_msg">คุณต้องการที่จะออกจากเกม?</string>
+    <string name="no_app">แอพลิเคชันที่ติดตั้งไม่มีการสนับสนุนการดำเนินงานร่วมกัน</string>
+    <string name="click_to">คลิกเพื่อดู</string>
+    <string name="in">ใน</string>
+    <string name="install_app">ติดตั้งโปรแกรมนี้</string>
+    <string name="new_achieveunlocked">ขอแสดงความยินดีความสำเร็จใหม่ปลดล็อค</string>
+    <string name="congrats_high">ขอแสดงความยินดีคะแนนสูงสุดใหม่</string>
+    <string name="not_connected">"บริการ google เล่นไม่ได้เชื่อมต่อ!
+ 
+ คุณต้องการที่จะเชื่อมต่อ?"</string>
+</resources>

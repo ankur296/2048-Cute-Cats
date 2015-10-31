@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Google Play 서비스 설치</string>
+    <string name="common_google_play_services_install_text_phone">휴대전화에 Google Play 서비스가 설치되어 있어야 이 앱이 실행됩니다.</string>
+    <string name="common_google_play_services_install_text_tablet">태블릿에 Google Play 서비스가 설치되어 있어야 이 앱이 실행됩니다.</string>
+    <string name="common_google_play_services_install_button">Google Play 서비스 설치</string>
+    <string name="common_google_play_services_enable_title">Google Play 서비스 사용</string>
+    <string name="common_google_play_services_enable_text">Google Play 서비스를 사용하도록 설정해야 이 앱이 작동합니다.</string>
+    <string name="common_google_play_services_enable_button">Google Play 서비스 사용</string>
+    <string name="common_google_play_services_update_title">Google Play 서비스 업데이트</string>
+    <string name="common_google_play_services_update_text">Google Play 서비스를 업데이트해야만 이 앱이 실행됩니다.</string>
+    <string name="common_google_play_services_network_error_title">네트워크 오류</string>
+    <string name="common_google_play_services_network_error_text">Google Play 서비스에 연결하려면 데이터 연결이 필요합니다.</string>
+    <string name="common_google_play_services_invalid_account_title">올바르지 않은 계정</string>
+    <string name="common_google_play_services_invalid_account_text">지정한 계정이 이 기기에 존재하지 않습니다. 다른 계정을 선택하세요.</string>
+    <string name="common_google_play_services_unknown_issue">Google Play 서비스에 알 수 없는 문제가 발생했습니다.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play 서비스</string>
+    <string name="common_google_play_services_unsupported_text">일부 사용자 애플리케이션에 필요한 Google Play 서비스가 사용자 기기에서 지원되지 않습니다. 기기 제조업체에 문의하시기 바랍니다.</string>
+    <string name="common_google_play_services_unsupported_date_text">기기의 날짜가 잘못된 것 같습니다. 기기의 날짜를 확인해 주세요.</string>
+    <string name="common_google_play_services_update_button">업데이트</string>
+    <string name="common_signin_button_text">로그인</string>
+    <string name="common_signin_button_text_long">Google 계정으로 로그인</string>
+    <string name="auth_client_using_bad_version_title">애플리케이션에서 잘못된 버전의 Google Play 서비스를 사용하려고 했습니다.</string>
+    <string name="auth_client_needs_enabling_title">Google Play 서비스를 사용하도록 설정해야 하는 애플리케이션입니다.</string>
+    <string name="auth_client_needs_installation_title">Google Play 서비스를 설치해야 하는 애플리케이션입니다.</string>
+    <string name="auth_client_needs_update_title">Google Play 서비스를 업데이트해야 하는 애플리케이션입니다.</string>
+    <string name="auth_client_play_services_err_notification_msg">Google Play 서비스 오류</string>
+    <string name="auth_client_requested_by_msg">%1$s에서 요청</string>
+    <string name="admob_unit_id">a1536694613007d</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">세계 안녕하세요!</string>
+    <string name="action_settings">설정</string>
+    <string name="new_game">새 게임</string>
+    <string name="high_score">높은 점수</string>
+    <string name="score">점수</string>
+    <string name="moves">이동 :</string>
+    <string name="instructions">이동 문지릅니다. 2 + 2 = 4가. 2048 도달.</string>
+    <string name="instructions_4096">이동 문지릅니다. 2 + 2 = 4가. 4096에 도달합니다.</string>
+    <string name="instructions_8192">이동 문지릅니다. 2 + 2 = 4가. 8192에 도달합니다.</string>
+    <string name="you_win">당신은 승리!</string>
+    <string name="game_over">게임 오버!</string>
+    <string name="go_on">새 게임에게 시작</string>
+    <string name="for_now">지금은</string>
+    <string name="endless">새 게임에게 시작</string>
+    <string name="per_rec">개인 기록</string>
+    <string name="achievements">업적</string>
+    <string name="leader">득점 선두</string>
+    <string name="share_us">주</string>
+    <string name="game_modes">모드</string>
+    <string name="rateus">율</string>
+    <string name="sound_txt">사운드 :</string>
+    <string name="theme_txt">주제 :</string>
+    <string name="effects_txt">빛의 효과 :</string>
+    <string name="tiles_txt">타일 ​​사용 :</string>
+    <string name="animation_txt">애니메이션 :</string>
+    <string name="showtime_txt">타이머 :</string>
+    <string name="moves_txt">이동 완료 :</string>
+    <string name="select_mode">모드를 선택합니다 :</string>
+    <string name="select_mode_classic">고전적인</string>
+    <string name="select_mode_desc">제목 2048 만들려고</string>
+    <string name="mode_play">플레이</string>
+    <string name="share_score">점수</string>
+    <string name="share_snap">포착</string>
+    <string name="share_screen">화면</string>
+    <string name="exit_app">출구</string>
+    <string name="score_game">당신은 <font fgcolor="#F88017">%1$d </font> 이동에 <font fgcolor="#F88017">%2$d </font>" 을 득점했다. "</string>
+    <string name="cancel">취소</string>
+    <string name="restart">스타트</string>
+    <string name="dialog_msg">당신은 새로운 게임을 시작 하시겠습니까?</string>
+    <string name="extra_sharetext">2048은 멋진 응용 프로그램입니다. 난 당신이 사용하는 것이 좋습니다.</string>
+    <string name="score_made">와우 내가 득점 할 수 있어요</string>
+    <string name="beat_this">당신이 이길 수 있습니다! n 개의 놀이</string>
+    <string name="score_captued">점수 캡처</string>
+    <string name="exit_msg">당신은 게임을 종료 하시겠습니까?</string>
+    <string name="no_app">된 응용 프로그램이 주 동작을 지원한다 설치되지</string>
+    <string name="click_to">보려면 클릭</string>
+    <string name="in">에서</string>
+    <string name="install_app">이 응용 프로그램을 설치합니다.</string>
+    <string name="new_achieveunlocked">"축하는 
+ 새로운 업적 잠금 해제"</string>
+    <string name="congrats_high">"축하는 
+ 새 최고 점수를"</string>
+    <string name="not_connected">구글 플레이 서비스가 연결되지 않습니다! n n 을 연결 하시겠습니까?</string>
+</resources>

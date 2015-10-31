@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Google Play-Dienste installieren</string>
+    <string name="common_google_play_services_install_text_phone">Zur Nutzung dieser App sind Google Play-Dienste erforderlich, die auf Ihrem Telefon nicht installiert sind.</string>
+    <string name="common_google_play_services_install_text_tablet">Zur Nutzung dieser App sind Google Play-Dienste erforderlich, die auf Ihrem Tablet nicht installiert sind.</string>
+    <string name="common_google_play_services_install_button">Google Play-Dienste installieren</string>
+    <string name="common_google_play_services_enable_title">Google Play-Dienste aktivieren</string>
+    <string name="common_google_play_services_enable_text">Diese App funktioniert nur, wenn Sie die Google Play-Dienste aktivieren.</string>
+    <string name="common_google_play_services_enable_button">Google Play-Dienste aktivieren</string>
+    <string name="common_google_play_services_update_title">Google Play-Dienste aktualisieren</string>
+    <string name="common_google_play_services_update_text">Diese App wird nur ausgeführt, wenn Sie die Google Play-Dienste aktualisieren.</string>
+    <string name="common_google_play_services_network_error_title">Netzwerkfehler</string>
+    <string name="common_google_play_services_network_error_text">Um eine Verbindung zu den Google Play-Diensten herzustellen, ist eine Datenverbindung erforderlich.</string>
+    <string name="common_google_play_services_invalid_account_title">Ungültiges Konto</string>
+    <string name="common_google_play_services_invalid_account_text">Das angegebene Konto ist auf diesem Gerät nicht vorhanden. Bitte wählen Sie ein anderes Konto aus.</string>
+    <string name="common_google_play_services_unknown_issue">Unbekanntes Problem mit Google Play-Diensten</string>
+    <string name="common_google_play_services_unsupported_title">Google Play-Dienste</string>
+    <string name="common_google_play_services_unsupported_text">Google Play-Dienste, auf denen einige Ihrer Apps basieren, werden von diesem Gerät nicht unterstützt. Wenden Sie sich für weitere Informationen an den Hersteller.</string>
+    <string name="common_google_play_services_unsupported_date_text">Das Datum auf dem Gerät scheint falsch zu sein. Bitte überprüfen Sie das Datum auf dem Gerät.</string>
+    <string name="common_google_play_services_update_button">Aktualisieren</string>
+    <string name="common_signin_button_text">Anmelden</string>
+    <string name="common_signin_button_text_long">Über Google anmelden</string>
+    <string name="auth_client_using_bad_version_title">App versuchte, defekte Google Play-Dienste-Version zu verwenden</string>
+    <string name="auth_client_needs_enabling_title">App erfordert aktivierte Google Play-Dienste</string>
+    <string name="auth_client_needs_installation_title">App erfordert die Installation von Google Play-Diensten</string>
+    <string name="auth_client_needs_update_title">App erfordert ein Update für Google Play-Dienste</string>
+    <string name="auth_client_play_services_err_notification_msg">Fehler bei Google Play-Diensten</string>
+    <string name="auth_client_requested_by_msg">Angefordert von %1$s</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="new_game">Neues Spiel</string>
+    <string name="high_score">Hoch Partitur</string>
+    <string name="score">Partitur</string>
+    <string name="moves">Bewegt sich:</string>
+    <string name="instructions">Streichen Sie sich zu bewegen. 2 + 2 = 4 ist. Reichweite 2048.</string>
+    <string name="instructions_4096">Streichen Sie sich zu bewegen. 2 + 2 = 4 ist. Reichweite 4096.</string>
+    <string name="instructions_8192">Streichen Sie sich zu bewegen. 2 + 2 = 4 ist. Reichweite 8192.</string>
+    <string name="you_win">Gewinner!</string>
+    <string name="game_over">Spiel vorbei!</string>
+    <string name="go_on">Neues Spiel starten</string>
+    <string name="for_now">Denn jetzt</string>
+    <string name="endless">Neues Spiel starten</string>
+    <string name="per_rec">Persönliche Rekorde</string>
+    <string name="achievements">Erfolge</string>
+    <string name="leader">Rangliste</string>
+    <string name="share_us">Aktie</string>
+    <string name="game_modes">Modi</string>
+    <string name="rateus">Rate</string>
+    <string name="sound_txt">Klang:</string>
+    <string name="theme_txt">Thema:</string>
+    <string name="effects_txt">Lichteffekte:</string>
+    <string name="tiles_txt">Fliesen verwendet:</string>
+    <string name="animation_txt">Animation:</string>
+    <string name="showtime_txt">Schaltuhr:</string>
+    <string name="moves_txt">Moves Fertig:</string>
+    <string name="select_mode">Wählen Sie Modus:</string>
+    <string name="select_mode_classic">Klassiker</string>
+    <string name="select_mode_desc">Versuchen Sie, ein Titel 2048 machen</string>
+    <string name="mode_play">Wiedergabe</string>
+    <string name="share_score">Partitur</string>
+    <string name="share_snap">Capture-</string>
+    <string name="share_screen">Bildschirm</string>
+    <string name="exit_app">Beenden</string>
+    <string name="score_game">Sie haben <font fgcolor="#F88017">%1$d </font> in <font fgcolor="#F88017">%2$d </font> bewegt Partitur.</string>
+    <string name="cancel">Stornieren</string>
+    <string name="restart">Start-</string>
+    <string name="dialog_msg">Sie Willst du ein neues Spiel starten?</string>
+    <string name="extra_sharetext">2048 Anwendung ist genial. Ich empfehle, den Sie verwenden.</string>
+    <string name="score_made">Wow ich bin in der Lage zu punkten</string>
+    <string name="beat_this">"Können Sie das Schlagen!!! 
+ Wiedergabe"</string>
+    <string name="score_captued">Partitur erfasst</string>
+    <string name="exit_msg">Wollen Sie von Spiel beenden wollen?</string>
+    <string name="no_app">Keine Anwendung installiert Unterstützung Aktie Betrieb</string>
+    <string name="click_to">Klicken für</string>
+    <string name="in">in</string>
+    <string name="install_app">Diese Anwendung installieren.</string>
+    <string name="new_achieveunlocked">"Herzlichen Glückwunsch 
+ Neue Leistung ungesperrt"</string>
+    <string name="congrats_high">"Herzlichen Glückwunsch 
+ neue hoch partitur"</string>
+    <string name="not_connected">"Google Play Dienstleistungen, die nicht miteinander verbunden sind! 
+
+ Wollen Sie zu Schließen?"</string>
+</resources>

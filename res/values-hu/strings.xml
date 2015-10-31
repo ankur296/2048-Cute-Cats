@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Play Szolgáltatások telepítése</string>
+    <string name="common_google_play_services_install_text_phone">Az alkalmazás működéséhez a Google Play Szolgáltatások szükségesek, ezek nincsenek telepítve a telefonon.</string>
+    <string name="common_google_play_services_install_text_tablet">Az alkalmazás működéséhez a Google Play Szolgáltatások szükségesek, ezek nincsenek telepítve a táblagépen.</string>
+    <string name="common_google_play_services_install_button">Play Szolgáltatások telepítése</string>
+    <string name="common_google_play_services_enable_title">Google Play Szolgáltatások aktiválása</string>
+    <string name="common_google_play_services_enable_text">Az alkalmazás csak akkor fog működni, ha engedélyezi a Google Play Szolgáltatásokat.</string>
+    <string name="common_google_play_services_enable_button">Play Szolgáltatások aktiválása</string>
+    <string name="common_google_play_services_update_title">Play Szolgáltatások frissítése</string>
+    <string name="common_google_play_services_update_text">Az alkalmazás csak akkor fog működni, ha frissíti a Google Play Szolgáltatásokat.</string>
+    <string name="common_google_play_services_network_error_title">Hálózati hiba</string>
+    <string name="common_google_play_services_network_error_text">A Google Play Szolgáltatásokhoz történő kapcsolódáshoz adatkapcsolat szükséges.</string>
+    <string name="common_google_play_services_invalid_account_title">Érvénytelen fiók</string>
+    <string name="common_google_play_services_invalid_account_text">A megadott fiók nem létezik ezen az eszközön. Kérjük, válasszon másik fiókot.</string>
+    <string name="common_google_play_services_unknown_issue">Ismeretlen hiba a Google Play Szolgáltatásokban.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play Szolgáltatások</string>
+    <string name="common_google_play_services_unsupported_text">A Google Play Szolgáltatásokat, amelyre egyes alkalmazások támaszkodnak, nem támogatja az eszköz. Segítségért forduljon az eszköz gyártójához.</string>
+    <string name="common_google_play_services_unsupported_date_text">Az eszközön beállított dátum helytelen. Kérjük, ellenőrizze azt.</string>
+    <string name="common_google_play_services_update_button">Frissítés</string>
+    <string name="common_signin_button_text">Belépés</string>
+    <string name="common_signin_button_text_long">Google-bejelentkezés</string>
+    <string name="auth_client_using_bad_version_title">Egy alkalmazás a Play Szolgáltatások rossz verzióját akarta használni.</string>
+    <string name="auth_client_needs_enabling_title">Egy alkalmazás kéri a Google Play Szolgáltatások engedélyezését.</string>
+    <string name="auth_client_needs_installation_title">Egy alkalmazás kéri a Google Play Szolgáltatások telepítését.</string>
+    <string name="auth_client_needs_update_title">Egy alkalmazás kéri a Google Play Szolgáltatások frissítését.</string>
+    <string name="auth_client_play_services_err_notification_msg">Google Play szolgáltatási hiba</string>
+    <string name="auth_client_requested_by_msg">Igénylő: %1$s</string>
+    <string name="admob_unit_id">a1536694613007d</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">Helló világ!</string>
+    <string name="action_settings">Beállítások</string>
+    <string name="new_game">Új játék</string>
+    <string name="high_score">legtöbb pontot</string>
+    <string name="score">pontszám</string>
+    <string name="moves">Lépések:</string>
+    <string name="instructions">Húzza mozogni. 2 + 2 = 4. Reach 2048.</string>
+    <string name="instructions_4096">Húzza mozogni. 2 + 2 = 4. Reach 4096.</string>
+    <string name="instructions_8192">Húzza mozogni. 2 + 2 = 4. Reach 8192.</string>
+    <string name="you_win">Nyersz!</string>
+    <string name="game_over">Game Over!</string>
+    <string name="go_on">Új játék indítása</string>
+    <string name="for_now">Most</string>
+    <string name="endless">Új játék indítása</string>
+    <string name="per_rec">Személyes Records</string>
+    <string name="achievements">Eredmények</string>
+    <string name="leader">Ranglistán</string>
+    <string name="share_us">Részvény</string>
+    <string name="game_modes">Módok</string>
+    <string name="rateus">Arány</string>
+    <string name="sound_txt">Hang:</string>
+    <string name="theme_txt">Téma:</string>
+    <string name="effects_txt">Fény hatások:</string>
+    <string name="tiles_txt">Csempe Használt:</string>
+    <string name="animation_txt">Animáció:</string>
+    <string name="showtime_txt">Timer:</string>
+    <string name="moves_txt">Lépés Kész:</string>
+    <string name="select_mode">Válassza mód:</string>
+    <string name="select_mode_classic">Klasszikus</string>
+    <string name="select_mode_desc">Próbáld ki, hogy a cím 2048</string>
+    <string name="mode_play">Lejátszás</string>
+    <string name="share_score">Pontszám</string>
+    <string name="share_snap">Elfog</string>
+    <string name="share_screen">Képernyő</string>
+    <string name="exit_app">Kijárat</string>
+    <string name="score_game">Már gólt <font fgcolor="#F88017">%1$d </font>-ben <font fgcolor="#F88017">%2$d </font>"mozog. "</string>
+    <string name="cancel">Mégsem</string>
+    <string name="restart">Kezdet</string>
+    <string name="dialog_msg">akarsz kezdeni a játékot?</string>
+    <string name="extra_sharetext">2048 fantasztikus alkalmazás. Azt javasoljuk, hogy használja.</string>
+    <string name="score_made">wow tudok gólt</string>
+    <string name="beat_this">"meg tudja verni ezt !!! 
+ játszani"</string>
+    <string name="score_captued">pontszám elfogták</string>
+    <string name="exit_msg">Mit akar lépni a játékból?</string>
+    <string name="no_app">nincs alkalmazás telepítve támogató megosztást</string>
+    <string name="click_to">kattintson a megtekintéshez</string>
+    <string name="in">a</string>
+    <string name="install_app">telepítse ezt az alkalmazást.</string>
+    <string name="new_achieveunlocked">"gratula 
+ új Eredmény kártyafüggetlen"</string>
+    <string name="congrats_high">"gratula 
+ új toplista"</string>
+    <string name="not_connected">"google play szolgáltatások nem csatlakozik! 
+ 
+ akarsz csatlakozni?"</string>
+</resources>

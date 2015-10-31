@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Dodać Płytka do Win 2048. początek !</item>
+        <item>"Odtwórz Kompletne .. Aby Wyższa .. 
+ Sprawdź jak daleko można się posunąć .."</item>
+        <item>"Zło nie połączy płytki, aby się większe tytuły. 
+ Zagrajmy .."</item>
+    </string-array>
+</resources>

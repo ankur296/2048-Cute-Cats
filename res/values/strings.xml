@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_install_text_phone">"This app won't run without Google Play services, which are missing from your phone."</string>
+    <string name="common_google_play_services_install_text_tablet">"This app won't run without Google Play services, which are missing from your tablet."</string>
+    <string name="common_google_play_services_install_button">Get Google Play services</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_enable_text">"This app won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_update_text">"This app won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_date_text">The date on the device appears to be incorrect. Please check the date on the device.</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="auth_client_using_bad_version_title">An application attempted to use a bad version of Google Play Services.</string>
+    <string name="auth_client_needs_enabling_title">An application requires Google Play Services to be enabled.</string>
+    <string name="auth_client_needs_installation_title">An application requires installation of Google Play Services.</string>
+    <string name="auth_client_needs_update_title">An application requires an update for Google Play Services.</string>
+    <string name="auth_client_play_services_err_notification_msg">Google Play services error</string>
+    <string name="auth_client_requested_by_msg">Requested by %1$s</string>
+    <string name="location_client_powered_by_google">Powered by Google</string>
+    <string name="gamehelper_sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
+    <string name="gamehelper_app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+    <string name="gamehelper_license_failed">License check failed.</string>
+    <string name="gamehelper_unknown_error">Unknown error.</string>
+    <!-- <string name="app_id">250910136502</string>
+    <string name="achievement_newbie">CgkItrGj26YHEAIQBQ</string>
+    <string name="achievement_practicant">CgkItrGj26YHEAIQBA</string>
+    <string name="achievement_explorer">CgkItrGj26YHEAIQCQ</string>
+    <string name="achievement_promoter">CgkItrGj26YHEAIQBg</string>
+    <string name="achievement_winner">CgkItrGj26YHEAIQBw</string>
+    <string name="achievement_professional">CgkItrGj26YHEAIQCA</string>
+    <string name="achievement_expert">CgkItrGj26YHEAIQCg</string>
+    <string name="achievement_master">CgkItrGj26YHEAIQCw</string>
+    <string name="leaderboard_classic_4_x_4">CgkItrGj26YHEAIQAQ</string>
+    <string name="leaderboard_more_fun_5_x_5">CgkItrGj26YHEAIQAg</string>
+    <string name="leaderboard_amazing_6_x_6">CgkItrGj26YHEAIQAw</string> -->
+     <string name="banner_ad_unit_id">ca-app-pub-6816050713890894/1721569161</string>
+    <string name="app_name">2048 Cute Cats</string>
+    <string name="header">2048</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_game">New Game</string>
+    <string name="new_game_id">250910136502</string>
+    <string name="high_score">HIGH SCORE</string>
+    <string name="score">SCORE</string>
+    <string name="moves">Moves:</string>
+    <string name="instructions">Swipe to move. 2 + 2 = 4. Reach 2048.</string>
+    <string name="you_win">You Win!</string>
+    <string name="game_over">Game Over!</string>
+    <string name="go_on">Tap to Continue</string>
+    <string name="for_now">For now...</string>
+    <string name="endless">"Endless" Mode</string>
+    <string name="cute_cats">Cute Cats</string>
+    <string name="per_rec">Personal Records</string>
+    <string name="achievements">Achievements</string>
+    <string name="leader">Top Scorers</string>
+    <string name="share_us">Share This App</string>
+    <string name="game_modes">Modes</string>
+    <string name="rateus">Rate This App</string>
+    <string name="sound_On">Sound On</string>
+    <string name="sound_Off">Sound Off</string>
+    <string name="share_score">Score</string>
+    <string name="share_snap">Capture</string>
+    <string name="share_screen">Screen</string>
+    <string name="exit_app">Exit</string>
+    <string name="score_game">You have scored <font fgcolor="#F88017">%1$d </font> in <font fgcolor="#F88017">%2$d </font> moves</string>
+    <string name="cancel">Cancel</string>
+    <string name="restart">Start</string>
+    <string name="dialog_msg">Do You Want to Start a new Game ?</string>
+    <string name="extra_sharetext">Play the addictive 2048 puzzle game with adorable cats ..</string>
+    <string name="score_made">Wow I am able to Score</string>
+    <string name="beat_this">"Can you Beat this!!! 
+ Play"</string>
+    <string name="score_captued">Score Captured</string>
+    <string name="exit_msg">Do you want to exit from Game?</string>
+    <string name="no_app">No Application Installed Supporting Share Operation</string>
+    <string name="click_to">Click to View</string>
+    <string name="in">in</string>
+    <string name="install_app">Install This Application.</string>
+    <string name="new_achieveunlocked">"Congrats 
+ New Achievement Unlocked"</string>
+    <string name="congrats_high">"Congrats 
+ New Highscore"</string>
+    <string name="not_connected">"Google Play Services are not Connected! 
+
+ Do you Want to Connect?"</string>
+</resources>

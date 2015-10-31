@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Làm cho 2048 Ngói để chiến thắng. Bắt đầu!</item>
+        <item>"Chơi vô tận .. Để thực hiện cao hơn .. 
+ Kiểm tra như thế nào đến nay bạn có thể đi .."</item>
+        <item>"Gạch ác sẽ không Merge để làm tựa đề lớn hơn.
+ Hãy chơi .."</item>
+    </string-array>
+</resources>

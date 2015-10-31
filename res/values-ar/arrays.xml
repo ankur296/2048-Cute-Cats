@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>جعل 2048 بلاطة للفوز. بدء!</item>
+        <item>"اللعب التي لا نهاية لها .. لجعل العالي
+ ..تحقق أي مدى يمكنك الذهاب .."</item>
+        <item>"سوف الشر بلاط لا دمج لجعل العناوين أكبر. 
+ دعونا لعب .."</item>
+    </string-array>
+</resources>

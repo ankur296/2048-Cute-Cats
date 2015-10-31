@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Instalovat služby Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Ke spuštění této aplikace jsou potřeba služby Google Play, které v telefonu nemáte.</string>
+    <string name="common_google_play_services_install_text_tablet">Ke spuštění této aplikace jsou potřeba služby Google Play, které v tabletu nemáte.</string>
+    <string name="common_google_play_services_install_button">Instalovat služby Google Play</string>
+    <string name="common_google_play_services_enable_title">Aktivovat služby Google Play</string>
+    <string name="common_google_play_services_enable_text">Ke spuštění této aplikace je třeba aktivovat služby Google Play.</string>
+    <string name="common_google_play_services_enable_button">Aktivovat služby Google Play</string>
+    <string name="common_google_play_services_update_title">Aktualizace služeb Google Play</string>
+    <string name="common_google_play_services_update_text">Ke spuštění této aplikace je třeba aktualizovat služby Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Chyba sítě</string>
+    <string name="common_google_play_services_network_error_text">Připojení ke službám Google Play vyžaduje datové připojení.</string>
+    <string name="common_google_play_services_invalid_account_title">Neplatný účet</string>
+    <string name="common_google_play_services_invalid_account_text">Zadaný účet v tomto zařízení neexistuje. Zvolte prosím jiný účet.</string>
+    <string name="common_google_play_services_unknown_issue">Nastal neznámý problém se službami Google Play.</string>
+    <string name="common_google_play_services_unsupported_title">Služby Google Play</string>
+    <string name="common_google_play_services_unsupported_text">Některé vaše aplikace vyžadují služby Google Play, které ve vašem zařízení nejsou podporovány. S žádostí o pomoc se prosím obraťte na výrobce.</string>
+    <string name="common_google_play_services_unsupported_date_text">Datum v zařízení není správně nastaveno. Zkontrolujte prosím datum.</string>
+    <string name="common_google_play_services_update_button">Aktualizovat</string>
+    <string name="common_signin_button_text">Přihlásit se</string>
+    <string name="common_signin_button_text_long">Přihlásit se účtem Google</string>
+    <string name="auth_client_using_bad_version_title">Aplikace se pokusila použít nesprávnou verzi Služeb Google Play.</string>
+    <string name="auth_client_needs_enabling_title">Aplikace vyžaduje aktivované Služby Google Play.</string>
+    <string name="auth_client_needs_installation_title">Aplikace vyžaduje instalaci Služeb Google Play.</string>
+    <string name="auth_client_needs_update_title">Aplikace vyžaduje aktualizaci Služeb Google Play.</string>
+    <string name="auth_client_play_services_err_notification_msg">Chyba služeb Google Play</string>
+    <string name="auth_client_requested_by_msg">Požadováno aplikací %1$s</string>
+    <string name="admob_unit_id">a1536694613007d</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">Ahoj všichni!</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="new_game">Nová hra</string>
+    <string name="high_score">Vysoké skóre</string>
+    <string name="score">Skóre</string>
+    <string name="moves">Tahy:</string>
+    <string name="instructions">Přesuňte se pohybovat. 2 + 2 = 4. Dosah 2048.</string>
+    <string name="instructions_4096">Přesuňte se pohybovat. 2 + 2 = 4. Dosah 4096.</string>
+    <string name="instructions_8192">Přesuňte se pohybovat. 2 + 2 = 4. Dosah 8192.</string>
+    <string name="you_win">Můžete vyhrát!</string>
+    <string name="game_over">Game Over!</string>
+    <string name="go_on">Začít novou hru</string>
+    <string name="for_now">Pro tuto chvíli</string>
+    <string name="endless">Začít novou hru</string>
+    <string name="per_rec">Osobní záznamy</string>
+    <string name="achievements">Úspěchy</string>
+    <string name="leader">Leaderboard</string>
+    <string name="share_us">Podíl</string>
+    <string name="game_modes">Režimy</string>
+    <string name="rateus">Sazba</string>
+    <string name="sound_txt">Zvuk:</string>
+    <string name="theme_txt">Téma:</string>
+    <string name="effects_txt">Světelné efekty:</string>
+    <string name="tiles_txt">Dlaždice vybavenost:</string>
+    <string name="animation_txt">Animace:</string>
+    <string name="showtime_txt">časový spínač:</string>
+    <string name="moves_txt">Tahy Hotovo:</string>
+    <string name="select_mode">Vyberte režim:</string>
+    <string name="select_mode_classic">Klasický</string>
+    <string name="select_mode_desc">Snažte se, aby titulu 2048</string>
+    <string name="mode_play">Přehrát</string>
+    <string name="share_score">Skóre</string>
+    <string name="share_snap">Zajetí</string>
+    <string name="share_screen">Obrazovka</string>
+    <string name="exit_app">Výjezd</string>
+    <string name="score_game">Jste Góly <font fgcolor="#F88017">%1$d </font> do <font fgcolor="#F88017">%2$d </font>" tahů. "</string>
+    <string name="cancel">Zrušit</string>
+    <string name="restart">Start</string>
+    <string name="dialog_msg">Chceš začít novou hru?</string>
+    <string name="extra_sharetext">2048 je úžasná aplikace. Doporučuji použít.</string>
+    <string name="score_made">wow jsem schopen získat</string>
+    <string name="beat_this">"můžete porazit tuto !!! 
+ hra"</string>
+    <string name="score_captued">skóre získané</string>
+    <string name="exit_msg">chcete ukončit hru?</string>
+    <string name="no_app">není nainstalována aplikace podporující funkci sdílení</string>
+    <string name="click_to">klikněte pro zobrazení</string>
+    <string name="in">v</string>
+    <string name="install_app">nainstalovat tuto aplikaci.</string>
+    <string name="new_achieveunlocked">"gratulace 
+ nový úspěch odemčený"</string>
+    <string name="congrats_high">"gratulace 
+ nové highscore"</string>
+    <string name="not_connected">"Google Play služby nejsou spojeny! 
+ 
+ chceš připojit?"</string>
+</resources>

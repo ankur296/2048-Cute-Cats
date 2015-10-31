@@ -1,0 +1,8 @@
+<resources>
+
+        <style name="ToastAnimationCaller">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/shrink_fade_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="admob_unit_id">a1536694613007d</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">世界，你好！</string>
+    <string name="action_settings">设置</string>
+    <string name="new_game">新游戏</string>
+    <string name="high_score">高比分</string>
+    <string name="score">得分</string>
+    <string name="moves">招式：</string>
+    <string name="instructions">滑动移动。 2 +2 = 4，到达2048。</string>
+    <string name="instructions_4096">滑动移动。 2 +2 = 4，到达4096。</string>
+    <string name="instructions_8192">滑动移动。 2 +2 = 4，到达8192。</string>
+    <string name="you_win">你赢了！</string>
+    <string name="game_over">游戏结束！</string>
+    <string name="go_on">开始新游戏</string>
+    <string name="for_now">现在</string>
+    <string name="endless">开始新游戏</string>
+    <string name="per_rec">个人记录</string>
+    <string name="achievements">成就</string>
+    <string name="leader">排行榜</string>
+    <string name="share_us">共享</string>
+    <string name="game_modes">模式</string>
+    <string name="rateus">率</string>
+    <string name="sound_txt">声音：</string>
+    <string name="theme_txt">主题：</string>
+    <string name="effects_txt">灯光效果：</string>
+    <string name="tiles_txt">瓷砖使用：</string>
+    <string name="animation_txt">动画：</string>
+    <string name="showtime_txt">定时器：</string>
+    <string name="moves_txt">动作完成：</string>
+    <string name="select_mode">选择模式：</string>
+    <string name="select_mode_classic">经典</string>
+    <string name="select_mode_desc">试着做一个标题2048</string>
+    <string name="mode_play">播放</string>
+    <string name="share_score">得分</string>
+    <string name="share_snap">捕获</string>
+    <string name="share_screen">屏幕</string>
+    <string name="exit_app">出口</string>
+    <string name="score_game">您已在<font fgcolor="#F88017">%1$d </font>举动进球<font fgcolor="#F88017">%2$d </font>。</string>
+    <string name="cancel">取消</string>
+    <string name="restart">开始</string>
+    <string name="dialog_msg">你想开始一个新游戏？</string>
+    <string name="extra_sharetext">2048是真棒的应用程序。 我建议你使用。</string>
+    <string name="score_made">哇我能够进球</string>
+    <string name="beat_this">你能打败这个！ 播放</string>
+    <string name="score_captued">得分抓获</string>
+    <string name="exit_msg">你想从游戏中退出？</string>
+    <string name="no_app">没有应用程序安装支持共享操作</string>
+    <string name="click_to">点击查看</string>
+    <string name="in">在</string>
+    <string name="install_app">安装该应用程序。</string>
+    <string name="new_achieveunlocked">恭喜新成就解锁</string>
+    <string name="congrats_high">恭喜新高分</string>
+    <string name="not_connected">"谷歌播放服务没有连接！ 
+
+  你想连接？"</string>
+</resources>

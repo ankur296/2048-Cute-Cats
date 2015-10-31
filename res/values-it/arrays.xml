@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Fai Tile to Win 2048. Inizia!</item>
+        <item>"Gioca senza fine .. Per fare maggiore .. 
+ controllare quanto lontano si può andare .."</item>
+        <item>"Il male non si fonderanno Tiles per fare grandi titoli. 
+ Giochiamo .."</item>
+    </string-array>
+</resources>

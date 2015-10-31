@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Изтегляне на услугите за Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Това приложение няма да се изпълнява без услугите за Google Play, които липсват в телефона ви.</string>
+    <string name="common_google_play_services_install_text_tablet">Това приложение няма да се изпълнява без услугите за Google Play, които липсват в таблета ви.</string>
+    <string name="common_google_play_services_install_button">Услуги за Google Play: Изтегл.</string>
+    <string name="common_google_play_services_enable_title">Активиране на услугите за Google Play</string>
+    <string name="common_google_play_services_enable_text">Това приложение няма да работи, освен ако не активирате услугите за Google Play.</string>
+    <string name="common_google_play_services_enable_button">Услуги за Google Play: Актив.</string>
+    <string name="common_google_play_services_update_title">Актуализиране на услугите за Google Play</string>
+    <string name="common_google_play_services_update_text">Това приложение няма да се изпълнява, освен ако не актуализирате услугите за Google Play.</string>
+    <string name="common_google_play_services_network_error_title">Грешка в мрежата</string>
+    <string name="common_google_play_services_network_error_text">За свързване с услугите за Google Play се изисква връзка за данни.</string>
+    <string name="common_google_play_services_invalid_account_title">Невалиден профил</string>
+    <string name="common_google_play_services_invalid_account_text">Посоченият профил не съществува на това устройство. Моля, изберете друг.</string>
+    <string name="common_google_play_services_unknown_issue">Неизвестен проблем с услугите за Google Play.</string>
+    <string name="common_google_play_services_unsupported_title">Услуги за Google Play</string>
+    <string name="common_google_play_services_unsupported_text">Услугите за Google Play, на които разчитат някои от приложенията ви, не се поддържат от устройството ви. Моля, свържете се с производителя за помощ.</string>
+    <string name="common_google_play_services_unsupported_date_text">Изглежда, че датата на устройството е неправилна. Моля, проверете я.</string>
+    <string name="common_google_play_services_update_button">Актуализиране</string>
+    <string name="common_signin_button_text">Вход</string>
+    <string name="common_signin_button_text_long">Вход с Google</string>
+    <string name="auth_client_using_bad_version_title">Приложение опита да ползва неправилна версия на услуг. за Google Play.</string>
+    <string name="auth_client_needs_enabling_title">Приложение изисква активирането на услугите за Google Play.</string>
+    <string name="auth_client_needs_installation_title">Приложение изисква инсталирането на услугите за Google Play.</string>
+    <string name="auth_client_needs_update_title">Приложение изисква актуализирането на услугите за Google Play.</string>
+    <string name="auth_client_play_services_err_notification_msg">Грешка в услугите за Google Play</string>
+    <string name="auth_client_requested_by_msg">Заявено от %1$s</string>
+    <string name="admob_unit_id">a1536694613007d</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">Здравей, свят!</string>
+    <string name="action_settings">Настройки</string>
+    <string name="new_game">нова игра</string>
+    <string name="high_score">висока оценка</string>
+    <string name="score">Резултат</string>
+    <string name="moves">ходове:</string>
+    <string name="instructions">Плъзнете, за да се движат. 2 + 2 = 4. достигне 2048.</string>
+    <string name="instructions_4096">Плъзнете, за да се движат. 2 + 2 = 4. достигне 4096.</string>
+    <string name="instructions_8192">Плъзнете, за да се движат. 2 + 2 = 4. достигне 8192.</string>
+    <string name="you_win">Ти печелиш!</string>
+    <string name="game_over">Край на мача!</string>
+    <string name="go_on">Започнете New Game</string>
+    <string name="for_now">За сега</string>
+    <string name="endless">Започнете New Game</string>
+    <string name="per_rec">Лични Records</string>
+    <string name="achievements">Постижения</string>
+    <string name="leader">Leaderboard</string>
+    <string name="share_us">Дял</string>
+    <string name="game_modes">Modes</string>
+    <string name="rateus">Процент</string>
+    <string name="sound_txt">Звук:</string>
+    <string name="theme_txt">Тема:</string>
+    <string name="effects_txt">Светлинни ефекти:</string>
+    <string name="tiles_txt">Tiles Използваните:</string>
+    <string name="animation_txt">Анимация:</string>
+    <string name="showtime_txt">Таймер:</string>
+    <string name="moves_txt">Moves Готово:</string>
+    <string name="select_mode">Изберете вид:</string>
+    <string name="select_mode_classic">Класически</string>
+    <string name="select_mode_desc">Опитайте се да направите Title 2048</string>
+    <string name="mode_play">Играй</string>
+    <string name="share_score">Резултат</string>
+    <string name="share_snap">улавяне</string>
+    <string name="share_screen">Екран</string>
+    <string name="exit_app">Изход</string>
+    <string name="score_game">Можете да отбележи <font fgcolor="#F88017">%1$d </font> в <font fgcolor="#F88017">%2$d </font> ходове.</string>
+    <string name="cancel">Отмени</string>
+    <string name="restart">Начало</string>
+    <string name="dialog_msg">Искате ли да започнете нова игра?</string>
+    <string name="extra_sharetext">2048 е страхотно приложение. Препоръчвам ви да използвате.</string>
+    <string name="score_made">уау, аз съм в състояние да вкара</string>
+    <string name="beat_this">"може да ви победи тази !!! 
+ игра"</string>
+    <string name="score_captued">вкара заловен</string>
+    <string name="exit_msg">искаш да излезете от игра?</string>
+    <string name="no_app">няма приложение, инсталирано подкрепа на оперирането акции</string>
+    <string name="click_to">кликнете за да видите</string>
+    <string name="in">в</string>
+    <string name="install_app">инсталирате това приложение.</string>
+    <string name="new_achieveunlocked">"Поздравления 
+ ново постижение отключена"</string>
+    <string name="congrats_high">"Поздравления 
+ нов класацията"</string>
+    <string name="not_connected">"Google Play услуги, които не са свързани! 
+ 
+ искаш да се свържете?"</string>
+</resources>

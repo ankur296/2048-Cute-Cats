@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>승리 2048 타일을 확인합니다. 시작!</item>
+        <item>".. 높은 만들기 위해 끝없는를 재생 .. 
+ 은 얼마나 멀리 갈 수 확인 .."</item>
+        <item>"악은 더 큰 제목을 만들기 위해 타일을 병합하지 않습니다. 
+ 플레이하자 .."</item>
+    </string-array>
+</resources>

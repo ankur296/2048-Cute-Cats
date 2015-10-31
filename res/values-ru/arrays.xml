@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Выбрать 2048 как максимальную ячейку и играть!</item>
+        <item>"Бейтесь до конца 
+ чтоб достичь высоких результатов!"</item>
+        <item>"Достичь более высокого результата будет не сложно 
+ Давай играть"</item>
+    </string-array>
+</resources>

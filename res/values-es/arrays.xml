@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Hacer 2.048 Mosaico para Win. Inicie!</item>
+        <item>"Juega sin fin .. Para realizar Superior .. 
+ Revise qué tan lejos puede ir .."</item>
+        <item>"Evil Azulejos no se fusionarán para hacer más grande Títulos. 
+ Juguemos .."</item>
+    </string-array>
+</resources>

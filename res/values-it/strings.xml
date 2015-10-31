@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Installa Google Play Services</string>
+    <string name="common_google_play_services_install_text_phone">"L'app non funzionerà senza Google Play Services, non presente sul tuo telefono."</string>
+    <string name="common_google_play_services_install_text_tablet">"L'app non funzionerà senza Google Play Services, non presente sul tuo tablet."</string>
+    <string name="common_google_play_services_install_button">Installa Google Play Services</string>
+    <string name="common_google_play_services_enable_title">Attiva Google Play Services</string>
+    <string name="common_google_play_services_enable_text">"L'app non funzionerà se non attivi Google Play Services."</string>
+    <string name="common_google_play_services_enable_button">Attiva Google Play Services</string>
+    <string name="common_google_play_services_update_title">Aggiorna Google Play Services</string>
+    <string name="common_google_play_services_update_text">"L'app non funzionerà se non aggiorni Google Play Services."</string>
+    <string name="common_google_play_services_network_error_title">Errore di rete</string>
+    <string name="common_google_play_services_network_error_text">È necessaria una connessione dati per connettersi a Google Play Services.</string>
+    <string name="common_google_play_services_invalid_account_title">Account non valido</string>
+    <string name="common_google_play_services_invalid_account_text">"L'account specificato non esiste su questo dispositivo. Scegli un altro account."</string>
+    <string name="common_google_play_services_unknown_issue">Problema sconosciuto con Google Play Services.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play Services</string>
+    <string name="common_google_play_services_unsupported_text">La piattaforma Google Play Services, su cui sono basate alcune delle tue applicazioni, non è supportata dal dispositivo in uso. Per assistenza, contatta il produttore.</string>
+    <string name="common_google_play_services_unsupported_date_text">La data sul dispositivo sembra sbagliata. Controllala.</string>
+    <string name="common_google_play_services_update_button">Aggiorna</string>
+    <string name="common_signin_button_text">Accedi</string>
+    <string name="common_signin_button_text_long">Accedi con Google</string>
+    <string name="auth_client_using_bad_version_title">"Un'app ha tentato di usare una versione non valida di Play Services."</string>
+    <string name="auth_client_needs_enabling_title">"Un'applicazione richiede l'attivazione di Google Play Services."</string>
+    <string name="auth_client_needs_installation_title">"Un'applicazione richiede l'installazione di Google Play Services."</string>
+    <string name="auth_client_needs_update_title">"Un'applicazione richiede un aggiornamento di Google Play Services."</string>
+    <string name="auth_client_play_services_err_notification_msg">Errore Google Play Services</string>
+    <string name="auth_client_requested_by_msg">Richiesta da %1$s</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="hello_world">Halo dunia!</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="new_game">Permainan Baru</string>
+    <string name="high_score">SCORE TINGGI</string>
+    <string name="score">SCORE</string>
+    <string name="moves">Moves:</string>
+    <string name="instructions">Geser untuk bergerak. 2 + 2 = 4 Jangkauan 2048.</string>
+    <string name="instructions_4096">Geser untuk bergerak. 2 + 2 = 4 Jangkauan 4096.</string>
+    <string name="instructions_8192">Geser untuk bergerak. 2 + 2 = 4 Jangkauan 8192.</string>
+    <string name="you_win">Anda Menang!</string>
+    <string name="game_over">Baru Over!</string>
+    <string name="go_on">Mulai Permainan Baru</string>
+    <string name="for_now">Untuk saat ini</string>
+    <string name="endless">Mulai Permainan Baru</string>
+    <string name="per_rec">Catatan Pribadi</string>
+    <string name="achievements">Medali</string>
+    <string name="leader">LeaderBoard</string>
+    <string name="share_us">Berbagi</string>
+    <string name="game_modes">Mode</string>
+    <string name="rateus">Tingkat</string>
+    <string name="sound_txt">Suara:</string>
+    <string name="theme_txt">Tema:</string>
+    <string name="effects_txt">Efek cahaya:</string>
+    <string name="tiles_txt">Ubin Digunakan:</string>
+    <string name="animation_txt">Animasi:</string>
+    <string name="showtime_txt">Timer:</string>
+    <string name="moves_txt">Moves Selesai:</string>
+    <string name="select_mode">Pilih Mode:</string>
+    <string name="select_mode_classic">Klasik</string>
+    <string name="select_mode_desc">Cobalah untuk membuat Judul 2048</string>
+    <string name="mode_play">Bermain</string>
+    <string name="share_score">Skor</string>
+    <string name="share_snap">Tangkap</string>
+    <string name="share_screen">Layar</string>
+    <string name="exit_app">Keluar</string>
+    <string name="score_game">Anda telah mencetak 0 di 0 bergerak</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="restart">Mulai</string>
+    <string name="dialog_msg">Apakah Anda Ingin Memulai permainan baru?</string>
+    <string name="extra_sharetext">2048 adalah aplikasi yang mengagumkan. Saya sarankan Anda untuk menggunakan.</string>
+    <string name="score_made">Wow saya bisa Skor</string>
+    <string name="beat_this">"Dapatkah Anda Mengalahkan ini !!! 
+ Putar"</string>
+    <string name="score_captued">Skor Ditangkap</string>
+    <string name="exit_msg">Apakah Anda ingin keluar dari Baru?</string>
+    <string name="no_app">Tidak ada Aplikasi Terpasang Pendukung Share Operasi</string>
+    <string name="click_to">Klik untuk Lihat</string>
+    <string name="in">di</string>
+    <string name="install_app">Install Aplikasi ini.</string>
+    <string name="new_achieveunlocked">"Congrats 
+ Prestasi Baru Unlocked"</string>
+    <string name="congrats_high">"Congrats 
+ New Highscore"</string>
+    <string name="not_connected">"Mainkan Layanan Google tidak Terhubung! 
+ 
+ Apakah Anda Ingin Hubungkan?"</string>
+</resources>

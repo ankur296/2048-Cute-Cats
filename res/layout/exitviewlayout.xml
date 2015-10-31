@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/exit_text_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_white"
+            android:gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:paddingBottom="10dp"
+            android:text="@string/exit_msg"
+            android:textColor="@color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:color="@color/best_red" />
+
+        <RelativeLayout
+            android:id="@+id/adlayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_below="@+id/exit_text_msg"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp" >
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/google_addrext"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                ads:adSize="MEDIUM_RECTANGLE"
+                ads:adUnitId="ca-app-pub-6816050713890894/1721569161" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

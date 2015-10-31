@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modesdesc">
+        <item>Membuat 2048 ubin untuk menang. start!</item>
+        <item>Bermain tak berujung... Untuk membuat Higher .. n Periksa Seberapa jauh Anda bisa pergi..</item>
+        <item>Kejahatan Tiles tidak akan Merge Membuat Judul yang lebih besar. n Mari kita bermain ..</item>
+    </string-array>
+</resources>

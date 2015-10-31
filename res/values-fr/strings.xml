@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_install_title">Installer les services Google Play</string>
+    <string name="common_google_play_services_install_text_phone">Cette application ne fonctionnera pas sans les services Google Play, qui ne sont pas installés sur votre téléphone.</string>
+    <string name="common_google_play_services_install_text_tablet">Cette application ne fonctionnera pas sans les services Google Play, qui ne sont pas installés sur votre tablette.</string>
+    <string name="common_google_play_services_install_button">Installer services Google Play</string>
+    <string name="common_google_play_services_enable_title">Activer les services Google Play</string>
+    <string name="common_google_play_services_enable_text">"Cette application ne fonctionnera pas tant que vous n'aurez pas activé les services Google Play."</string>
+    <string name="common_google_play_services_enable_button">Activer services Google Play</string>
+    <string name="common_google_play_services_update_title">Mettre à jour les services Google Play</string>
+    <string name="common_google_play_services_update_text">"Cette application ne fonctionnera pas tant que vous n'aurez pas mis à jour les services Google Play."</string>
+    <string name="common_google_play_services_network_error_title">Erreur réseau</string>
+    <string name="common_google_play_services_network_error_text">"Vous devez disposer d'une connexion de données pour utiliser les services Google Play."</string>
+    <string name="common_google_play_services_invalid_account_title">Compte erroné</string>
+    <string name="common_google_play_services_invalid_account_text">"Le compte indiqué n'existe pas sur cet appareil. Veuillez sélectionner un autre compte."</string>
+    <string name="common_google_play_services_unknown_issue">Problème inconnu avec les services Google Play.</string>
+    <string name="common_google_play_services_unsupported_title">Services Google Play</string>
+    <string name="common_google_play_services_unsupported_text">"Les services Google Play, dont dépendent certaines de vos applications, ne sont pas compatibles avec votre appareil. Veuillez contacter le fabricant pour obtenir de l'aide."</string>
+    <string name="common_google_play_services_unsupported_date_text">"La date sur l'appareil semble incorrecte. Veuillez la vérifier."</string>
+    <string name="common_google_play_services_update_button">Mettre à jour</string>
+    <string name="common_signin_button_text">Connexion</string>
+    <string name="common_signin_button_text_long">Se connecter avec Google</string>
+    <string name="auth_client_using_bad_version_title">Une application requiert une version valide des services Google Play</string>
+    <string name="auth_client_needs_enabling_title">"Une application requiert l'activation des services Google Play"</string>
+    <string name="auth_client_needs_installation_title">"Une application requiert l'installation des services Google Play"</string>
+    <string name="auth_client_needs_update_title">Une application requiert la mise à jour des services Google Play</string>
+    <string name="auth_client_play_services_err_notification_msg">Erreur liée aux services Google Play</string>
+    <string name="auth_client_requested_by_msg">Demandée par %1$s</string>
+    <string name="admob_unit_id">a1536694613007d</string>
+    <string name="app_name">2048</string>
+    <string name="header">2048</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="new_game">Nouveau jeu</string>
+    <string name="high_score">TOP SCORE</string>
+    <string name="score">SCORE</string>
+    <string name="moves">se déplace:</string>
+    <string name="instructions">Passez à se déplacer. 2 + 2 = 4. Portée 2048.</string>
+    <string name="instructions_4096">Passez à se déplacer. 2 + 2 = 4. Portée 4096.</string>
+    <string name="instructions_8192">Passez à se déplacer. 2 + 2 = 4. Portée 8192.</string>
+    <string name="you_win">Vous gagnez!</string>
+    <string name="game_over">jeu terminé!</string>
+    <string name="go_on">Commencer une nouvelle partie</string>
+    <string name="for_now">"Pour l'instant"</string>
+    <string name="endless">Commencer une nouvelle partie</string>
+    <string name="per_rec">Les documents personnels</string>
+    <string name="achievements">Réalisations</string>
+    <string name="leader">meilleurs buteurs</string>
+    <string name="share_us">Part</string>
+    <string name="game_modes">Modes</string>
+    <string name="rateus">Taux</string>
+    <string name="sound_txt">Son:</string>
+    <string name="theme_txt">Thème:</string>
+    <string name="effects_txt">Effets de lumière:</string>
+    <string name="tiles_txt">"Tuiles d'occasion:"</string>
+    <string name="animation_txt">Animation:</string>
+    <string name="showtime_txt">minuteur:</string>
+    <string name="moves_txt">Déplace Fait:</string>
+    <string name="select_mode">Sélectionnez le mode:</string>
+    <string name="select_mode_classic">Classique</string>
+    <string name="select_mode_desc">Essayez de faire un titre 2048</string>
+    <string name="mode_play">Lecture</string>
+    <string name="share_score">Score</string>
+    <string name="share_snap">Capture</string>
+    <string name="share_screen">Écran</string>
+    <string name="exit_app">Quitter</string>
+    <string name="score_game">Vous avez marqué se <font fgcolor="#F88017">%1$d </font>Dans <font fgcolor="#F88017">%2$d </font>déplace</string>
+    <string name="cancel">Annuler</string>
+    <string name="restart">Démarrer</string>
+    <string name="dialog_msg">Voulez-vous commencer une nouvelle partie?</string>
+    <string name="extra_sharetext">"2048 est une application impressionnante. Je vous recommande d'utiliser."</string>
+    <string name="score_made">Wow, je suis en mesure de marquer</string>
+    <string name="beat_this">"Pouvez-vous battre ça!!! 
+ Lecture"</string>
+    <string name="score_captued">marquer capturé</string>
+    <string name="exit_msg">voulez-vous sortir du jeu?</string>
+    <string name="no_app">Aucune demande installé opération de partage de support</string>
+    <string name="click_to">Cliquez pour voir</string>
+    <string name="in">Dans</string>
+    <string name="install_app">Installez cette application.</string>
+    <string name="new_achieveunlocked">Félicitations n Nouveau succès déverrouillé</string>
+    <string name="congrats_high">Félicitations n nouveau record</string>
+    <string name="not_connected">Google Play services ne sont pas connectés! n n Voulez-vous connecter?</string>
+</resources>

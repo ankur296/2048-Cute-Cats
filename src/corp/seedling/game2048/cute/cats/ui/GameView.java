@@ -1,0 +1,687 @@
+package corp.seedling.game2048.cute.cats.ui;
+
+import java.util.ArrayList;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.view.View;
+import corp.seedling.game2048.cute.cats.R;
+import corp.seedling.game2048.cute.cats.logic.GameLogic;
+
+public class GameView extends View {
+
+	//Internal variables
+	Paint paint = new Paint();
+	public GameLogic game; 
+	public boolean hasSaveState = false;
+	public final int numCellTypes = 31;
+	public boolean continueButtonEnabled = false; 
+
+	//Layout variables
+	private int cellSize = 0;
+	private float textSize = 0;
+	private float cellTextSize = 0;
+	private int gridWidth = 0;
+	public int startingX;
+	public int startingY;
+	public int endingX;
+	public int endingY;
+	private int textPaddingSize;
+	private int iconPaddingSize;
+	public int mWidth;
+	public int mHeight;
+	
+	//Assets
+	private Drawable backgroundRectangle;
+	private BitmapDrawable[] bitmapCell = new BitmapDrawable[numCellTypes];
+
+	private Drawable lightUpRectangle;
+	private Drawable fadeRectangle;
+	private Bitmap background = null;
+	private BitmapDrawable loseGameOverlay;
+	private BitmapDrawable winGameContinueOverlay;
+	private BitmapDrawable winGameFinalOverlay;
+
+	//Text variables
+	private int sYAll;
+	private int titleStartYAll;
+	private int bodyStartYAll;
+	private int eYAll;
+	private int titleWidthHighScore;
+	private int titleWidthScore;
+
+	//Icon variables
+	public int sYIcons;
+	public int sXNewGame;
+	public int sXUndo;
+	public int sXSettings;
+	public int iconSize;
+
+	//Timing
+	long lastFPSTime = System.nanoTime();
+	long currentTime = System.nanoTime();
+
+	//Text
+	float titleTextSize;
+	float bodyTextSize;
+	float headerTextSize;
+	float instructionsTextSize; 
+	float gameOverTextSize;
+
+	//Misc
+	public boolean refreshLastTime = true;
+
+	//Intenal Constants
+	public static final int BASE_ANIMATION_TIME = 100000000;
+	public static final float MERGING_ACCELERATION = (float) -0.5;
+	public static final float INITIAL_VELOCITY = (1 - MERGING_ACCELERATION) / 4;
+
+	@SuppressLint("DrawAllocation")
+	@Override
+	public void onDraw(Canvas canvas) {
+		//Reset the transparency of the screen
+		canvas.drawBitmap(background, 0, 0, paint);
+
+		drawScoreText(canvas);
+
+		if (!game.isActive() && !game.aGrid.isAnimationActive()) {
+			drawNewGameButton(canvas, true);
+		}
+
+		drawCells(canvas);
+
+		if (!game.isActive()) {
+			drawEndGameState(canvas);
+		}
+
+		if (!game.canContinue()) {
+//			drawEndlessText(canvas);
+		}
+
+		//Refresh the screen if there is still an animation running
+		if (game.aGrid.isAnimationActive()) {
+			invalidate(startingX, startingY, endingX, endingY);
+			tick();
+			//Refresh one last time on game end.
+		} else if (!game.isActive() && refreshLastTime) {
+			invalidate();
+			refreshLastTime = false;
+		}
+	}
+
+	@Override
+	protected void onSizeChanged(int width, int height, int oldw, int oldh) {
+		System.out.println("Ankur onSizeChanged");
+		super.onSizeChanged(width, height, oldw, oldh);
+		getLayout(width, height);
+		createBitmapCells();
+		createBackgroundBitmap(width, height);
+		createOverlays();
+	}
+
+	private void drawDrawable(Canvas canvas, Drawable draw, int startingX, int startingY, int endingX, int endingY, int resID) {
+		Bitmap bitmap = ((BitmapDrawable)draw).getBitmap();
+
+		if (draw == null || (bitmap.isRecycled()) ){
+			System.out.println("ankur bitmap recycled.. decode again");
+
+			bitmap = BitmapFactory.decodeStream(getResources().openRawResource(resID));
+			draw = new BitmapDrawable(getResources(),bitmap);
+		}
+
+
+		draw.setBounds(startingX, startingY, endingX, endingY);
+		draw.draw(canvas);
+	}
+
+
+	private void drawDrawable(Canvas canvas, Drawable draw, int startingX, int startingY, int endingX, int endingY) {
+
+		draw.setBounds(startingX, startingY, endingX, endingY);
+		draw.draw(canvas);
+	}
+
+
+	private void drawCellText(Canvas canvas, int value, int sX, int sY) {
+		int textShiftY = centerText();
+		paint.setColor(getResources().getColor(R.color.text_pink)); 
+		canvas.drawText("" + value, sX + cellSize / 2, sY + cellSize / 2 - textShiftY, paint);
+	}
+
+	private void drawScoreText(Canvas canvas) {
+		//Drawing the score text: Ver 2
+		paint.setTextSize(bodyTextSize);
+		paint.setTextAlign(Paint.Align.CENTER);
+
+		int bodyWidthHighScore = (int) (paint.measureText("" + game.highScore));
+		int bodyWidthScore = (int) (paint.measureText("" + game.score));
+
+		int textWidthHighScore = Math.max(titleWidthHighScore, bodyWidthHighScore) + textPaddingSize * 2;
+		int textWidthScore = Math.max(titleWidthScore, bodyWidthScore) + textPaddingSize * 2;
+
+		int textMiddleHighScore = textWidthHighScore / 2;
+		int textMiddleScore = textWidthScore / 2;
+
+		int eXHighScore = endingX;
+		int sXHighScore = eXHighScore - textWidthHighScore;
+
+		int eXScore = sXHighScore - textPaddingSize;
+		int sXScore = eXScore - textWidthScore;
+
+		//Outputting high-scores box
+		backgroundRectangle.setBounds(sXHighScore, sYAll, eXHighScore, eYAll);
+		backgroundRectangle.draw(canvas);
+		paint.setTextSize(titleTextSize);
+		paint.setColor(getResources().getColor(R.color.text_brown));
+		canvas.drawText(getResources().getString(R.string.high_score), sXHighScore + textMiddleHighScore, titleStartYAll, paint);
+		paint.setTextSize(bodyTextSize);
+		paint.setColor(getResources().getColor(R.color.text_score_white));
+		canvas.drawText(String.valueOf(game.highScore), sXHighScore + textMiddleHighScore, bodyStartYAll, paint);
+
+
+		//Outputting scores box
+		backgroundRectangle.setBounds(sXScore, sYAll, eXScore, eYAll);
+		backgroundRectangle.draw(canvas);
+		paint.setTextSize(titleTextSize);
+		paint.setColor(getResources().getColor(R.color.text_brown));
+		canvas.drawText(getResources().getString(R.string.score), sXScore + textMiddleScore, titleStartYAll, paint);
+		paint.setTextSize(bodyTextSize);
+		paint.setColor(getResources().getColor(R.color.text_score_white));
+		canvas.drawText(String.valueOf(game.score), sXScore + textMiddleScore, bodyStartYAll, paint);
+	} 
+
+	private void drawNewGameButton(Canvas canvas, boolean lightUp) {
+
+		if (lightUp) {
+			drawDrawable(canvas,
+					lightUpRectangle,
+					sXNewGame,
+					sYIcons,
+					sXNewGame + iconSize,
+					sYIcons + iconSize
+					);
+		} else {
+			drawDrawable(canvas,
+					backgroundRectangle,
+					sXNewGame,
+					sYIcons, sXNewGame + iconSize,
+					sYIcons + iconSize
+					);
+		}
+
+		drawDrawable(canvas,
+				getResources().getDrawable(R.drawable.ic_action_refresh),
+				sXNewGame + iconPaddingSize,
+				sYIcons + iconPaddingSize,
+				sXNewGame + iconSize - iconPaddingSize,
+				sYIcons + iconSize - iconPaddingSize
+				);
+	}
+
+	private void drawUndoButton(Canvas canvas) {
+
+		drawDrawable(canvas,
+				backgroundRectangle,
+				sXUndo,
+				sYIcons, sXUndo + iconSize,
+				sYIcons + iconSize
+				);
+
+		drawDrawable(canvas,
+				getResources().getDrawable(R.drawable.ic_action_undo),
+				sXUndo + iconPaddingSize,
+				sYIcons + iconPaddingSize,
+				sXUndo + iconSize - iconPaddingSize,
+				sYIcons + iconSize - iconPaddingSize
+				);
+	}
+
+	private Canvas canvas;
+
+	private void drawSettingsButton(Canvas canvas) {
+
+		drawDrawable(canvas,
+				backgroundRectangle,
+				sXSettings,
+				sYIcons, sXSettings + iconSize,
+				sYIcons + iconSize
+				);
+		
+
+		drawDrawable(canvas,
+				getResources().getDrawable(R.drawable.ic_action_settings_pink),
+				sXSettings + iconPaddingSize,
+				sYIcons + iconPaddingSize,
+				sXSettings + iconSize - iconPaddingSize,
+				sYIcons + iconSize - iconPaddingSize
+				);
+	}
+	
+
+	private void drawHeader(Canvas canvas) {
+
+		//Drawing the header
+		paint.setTextSize(headerTextSize);
+		paint.setColor(getResources().getColor(R.color.text_pink));
+		paint.setTextAlign(Paint.Align.LEFT);
+		int textShiftY = centerText()*4 /** 2*/;
+		System.out.println("ankur measure header textShiftY "+ textShiftY);
+		int headerStartY = sYAll - textShiftY;
+		System.out.println("ankur measure header sYAll  "+ sYAll );
+		System.out.println("ankur measure header headerStartY "+ headerStartY);
+		System.out.println("ankur measure header x = " + startingX + ", headerStartY "+ headerStartY);
+	
+		canvas.drawText(getResources().getString(R.string.header), startingX, headerStartY, paint);
+	}
+
+	private void drawCuteCatsText(Canvas canvas) {
+
+		paint.setTextAlign(Paint.Align.LEFT);
+		paint.setTextSize(bodyTextSize);
+		paint.setColor(getResources().getColor(R.color.text_pink));
+		
+		System.out.println("ankur measure header x = " + startingX + ", headerStartY "+ (sYIcons - centerText()/2));
+		canvas.drawText(getResources().getString(R.string.cute_cats), startingX, sYIcons - centerText()/2 /** 2*/, paint);
+	}
+	
+	
+	private void drawInstructions(Canvas canvas) {
+
+		//Drawing the instructions
+		paint.setTextSize(instructionsTextSize);
+		paint.setColor(getResources().getColor(R.color.text_score_white));
+		paint.setTextAlign(Paint.Align.LEFT);
+		int textShiftY = centerText() * 2; 
+		canvas.drawText(getResources().getString(R.string.instructions),
+				startingX, endingY - textShiftY + textPaddingSize, paint);
+	}
+
+	private void drawBackground(Canvas canvas) {
+		drawDrawable(canvas, backgroundRectangle, startingX, startingY, endingX, endingY);
+	}
+
+	//Renders the set of 16 background squares.
+	private void drawBackgroundGrid(Canvas canvas) {
+		Resources resources = getResources();
+		Drawable backgroundCell = resources.getDrawable(R.drawable.cell_rectangle);
+		// Outputting the game grid
+		for (int xx = 0; xx < game.numSquaresX; xx++) {
+			for (int yy = 0; yy < game.numSquaresY; yy++) {
+				int sX = startingX + gridWidth + (cellSize + gridWidth) * xx;
+				int eX = sX + cellSize;
+				int sY = startingY + gridWidth + (cellSize + gridWidth) * yy;
+				int eY = sY + cellSize;
+
+				drawDrawable(canvas, backgroundCell, sX, sY, eX, eY);
+			}
+		}
+	}
+
+	private void drawCells(Canvas canvas) {
+		paint.setTextSize(textSize);
+		paint.setTextAlign(Paint.Align.CENTER);
+		// Outputting the individual cells
+		for (int xx = 0; xx < game.numSquaresX; xx++) {
+			for (int yy = 0; yy < game.numSquaresY; yy++) {
+				int sX = startingX + gridWidth + (cellSize + gridWidth) * xx;
+				int eX = sX + cellSize;
+				int sY = startingY + gridWidth + (cellSize + gridWidth) * yy;
+				int eY = sY + cellSize;
+
+				Tile currentTile = game.grid.getCellContent(xx, yy);
+				if (currentTile != null) {
+					//Get and represent the value of the tile
+					int value = currentTile.getValue();
+					int index = log2(value);
+
+					//Check for any active animations
+					ArrayList<AnimCell> aArray = game.aGrid.getAnimationCell(xx, yy);
+					boolean animated = false;
+					for (int i = aArray.size() - 1; i >= 0; i--) {
+						AnimCell aCell = aArray.get(i);
+						//If this animation is not active, skip it
+						if (aCell.getAnimationType() == GameLogic.SPAWN_ANIMATION) {
+							animated = true;
+						}
+						if (!aCell.isActive()) {
+							continue;
+						}
+
+						if (aCell.getAnimationType() == GameLogic.SPAWN_ANIMATION) { // Spawning animation
+							double percentDone = aCell.getPercentageDone();
+							float textScaleSize = (float) (percentDone);
+							paint.setTextSize(textSize * textScaleSize);
+
+							float cellScaleSize = cellSize / 2 * (1 - textScaleSize);
+							bitmapCell[index].setBounds((int) (sX + cellScaleSize), (int) (sY + cellScaleSize), (int) (eX - cellScaleSize), (int) (eY - cellScaleSize));
+							bitmapCell[index].draw(canvas);
+						} else if (aCell.getAnimationType() == GameLogic.MERGE_ANIMATION) { // Merging Animation
+							double percentDone = aCell.getPercentageDone();
+							float textScaleSize = (float) (1 + INITIAL_VELOCITY * percentDone
+									+ MERGING_ACCELERATION * percentDone * percentDone / 2);
+							paint.setTextSize(textSize * textScaleSize);
+
+							float cellScaleSize = cellSize / 2 * (1 - textScaleSize);
+							bitmapCell[index].setBounds((int) (sX + cellScaleSize), (int) (sY + cellScaleSize), (int) (eX - cellScaleSize), (int) (eY - cellScaleSize));
+							bitmapCell[index].draw(canvas);
+						} else if (aCell.getAnimationType() == GameLogic.MOVE_ANIMATION) {  // Moving animation
+							double percentDone = aCell.getPercentageDone();
+							int tempIndex = index;
+							if (aArray.size() >= 2) {
+								tempIndex = tempIndex - 1;
+							}
+							int previousX = aCell.extras[0];
+							int previousY = aCell.extras[1];
+							int currentX = currentTile.getX();
+							int currentY = currentTile.getY();
+							int dX = (int) ((currentX - previousX) * (cellSize + gridWidth) * (percentDone - 1) * 1.0);
+							int dY = (int) ((currentY - previousY) * (cellSize + gridWidth) * (percentDone - 1) * 1.0);
+							bitmapCell[tempIndex].setBounds(sX + dX, sY + dY, eX + dX, eY + dY);
+							bitmapCell[tempIndex].draw(canvas);
+						}
+						animated = true; 
+					}
+
+					//No active animations? Just draw the cell
+					if (!animated) {
+						bitmapCell[index].setBounds(sX, sY, eX, eY);
+						bitmapCell[index].draw(canvas);
+					}
+				}
+			}
+		}
+	}
+
+	private void drawEndGameState(Canvas canvas) {
+		System.out.println("ankur enter drawEndGameState ");
+		double alphaChange = 1;
+		continueButtonEnabled = false;
+		for (AnimCell animation : game.aGrid.globalAnimation) {
+			if (animation.getAnimationType() == GameLogic.FADE_GLOBAL_ANIMATION) {
+				alphaChange = animation.getPercentageDone();
+			}
+		}
+		BitmapDrawable displayOverlay = null;
+		if (game.gameWon()) {
+			System.out.println("ankur enter drawEndGameState if (game.gameWon())");
+			if (game.canContinue()) {
+				System.out.println("ankur enter drawEndGameState if (game.canContinue()");
+				continueButtonEnabled = true;
+				displayOverlay = winGameContinueOverlay;
+			} else {
+				System.out.println("ankur enter drawEndGameState else (game.canContinue()");
+				displayOverlay = winGameFinalOverlay;
+			}
+			
+		} else if (game.gameLost()) {
+			System.out.println("ankur enter drawEndGameState if (game.gameLost()");
+			displayOverlay = loseGameOverlay;
+		}
+
+		if (displayOverlay != null) {
+			displayOverlay.setBounds(startingX, startingY, endingX, endingY);
+			displayOverlay.setAlpha((int) (255 * alphaChange));
+			displayOverlay.draw(canvas);
+		}
+	}
+
+//	private void drawEndlessText(Canvas canvas) {
+//
+//		paint.setTextAlign(Paint.Align.LEFT);
+//		paint.setTextSize(bodyTextSize);
+//		paint.setColor(getResources().getColor(R.color.text_pink));
+//		canvas.drawText(getResources().getString(R.string.endless), startingX, sYIcons - centerText() * 2, paint);
+//	}
+
+
+	private void createEndGameStates(Canvas canvas, boolean win, boolean showButton) {
+		System.out.println("ankur enter createEndGameStates");
+		int width = endingX - startingX;
+		int length = endingY - startingY;
+		int middleX = width / 2;
+		int middleY = length / 2;
+		if (win) {
+			lightUpRectangle.setAlpha(127);
+			drawDrawable(canvas, lightUpRectangle, 0, 0, width, length);
+			lightUpRectangle.setAlpha(255);
+			paint.setColor(getResources().getColor(R.color.text_score_white));
+			paint.setAlpha(255);
+			paint.setTextSize(gameOverTextSize);
+			paint.setTextAlign(Paint.Align.CENTER);
+			int textBottom = middleY - centerText();
+			canvas.drawText(getResources().getString(R.string.you_win), middleX, textBottom, paint);
+			paint.setTextSize((float) (textSize * 1.5));
+			String text = showButton ? getResources().getString(R.string.go_on) :
+				getResources().getString(R.string.for_now);
+			canvas.drawText(text, middleX, textBottom + textPaddingSize * 2 - centerText() * 2, paint);
+			
+		} else {
+			fadeRectangle.setAlpha(127);
+			drawDrawable(canvas, fadeRectangle, 0, 0, width, length);
+			fadeRectangle.setAlpha(255);
+			paint.setColor(getResources().getColor(R.color.text_pink));
+			paint.setAlpha(255);
+			paint.setTextSize(gameOverTextSize);
+			paint.setTextAlign(Paint.Align.CENTER); 
+			canvas.drawText(getResources().getString(R.string.game_over), middleX, middleY - centerText(), paint);
+			
+		}
+	}
+
+	private void createBackgroundBitmap(int width, int height) {
+		background = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+		Canvas canvas = new Canvas(background);
+		drawHeader(canvas);
+		drawCuteCatsText(canvas);
+		drawNewGameButton(canvas, false);
+		drawUndoButton(canvas);
+
+		drawSettingsButton(canvas);
+		drawBackground(canvas);
+		drawBackgroundGrid(canvas);
+		drawInstructions(canvas);
+
+	}
+
+	public void createBitmapCells() {
+
+		Resources resources = getResources();
+		int[] cellRectangleIds = getCellRectangleIds();
+		paint.setTextAlign(Paint.Align.CENTER);
+		for (int xx = 1; xx < bitmapCell.length; xx++) {
+			int value = (int) Math.pow(2, xx);
+			paint.setTextSize(cellTextSize);
+			float tempTextSize = cellTextSize * cellSize * 0.9f / Math.max(cellSize * 0.9f, paint.measureText(String.valueOf(value)));
+			paint.setTextSize(tempTextSize);
+			Bitmap bitmap = Bitmap.createBitmap(cellSize, cellSize, Bitmap.Config.ARGB_8888);
+			Canvas canvas = new Canvas(bitmap);
+			drawDrawable(canvas, resources.getDrawable(cellRectangleIds[xx]), 0, 0, cellSize, cellSize, cellRectangleIds[xx]);
+			drawCellText(canvas, value, 0, 0);
+			bitmapCell[xx] = new BitmapDrawable(resources, bitmap);  
+		}
+	}
+
+	public void recycleBitmaps(){
+		int[] cellRectangleIds = getCellRectangleIds();
+
+		for (int xx = 1; xx < bitmapCell.length; xx++) {
+			BitmapDrawable bitmapDrawable = (BitmapDrawable)getResources().getDrawable(cellRectangleIds[xx]);
+			Bitmap bitmap = bitmapDrawable.getBitmap();
+
+			if (null != bitmapDrawable && !bitmap.isRecycled()) {
+
+				bitmap.recycle();
+				bitmap = null;
+				bitmapDrawable = null;
+				System.gc(); 
+
+			} else {
+			}
+		}
+
+		backgroundRectangle = null;
+		lightUpRectangle = null;
+		fadeRectangle = null;
+		background = null;
+		loseGameOverlay = null;
+		winGameContinueOverlay = null ;
+		winGameFinalOverlay = null;
+	}
+
+	private int[] getCellRectangleIds() {
+		int[] cellRectangleIds = new int[numCellTypes]; 
+		cellRectangleIds[0] = R.drawable.cell_rectangle;//cat262144;
+		cellRectangleIds[1] = R.drawable.cat2;
+		cellRectangleIds[2] = R.drawable.cat4; 
+		cellRectangleIds[3] = R.drawable.cat8;
+		cellRectangleIds[4] = R.drawable.cat16; 
+		cellRectangleIds[5] = R.drawable.cat32;
+		cellRectangleIds[6] = R.drawable.cat64; 
+		cellRectangleIds[7] = R.drawable.cat128; 
+		cellRectangleIds[8] = R.drawable.cat256;
+		cellRectangleIds[9] = R.drawable.cat512; 
+		cellRectangleIds[10] = R.drawable.cat1024;
+		cellRectangleIds[11] = R.drawable.cat2048;
+		cellRectangleIds[12] = R.drawable.cat4096;
+		cellRectangleIds[13] = R.drawable.cat8192;
+		cellRectangleIds[14] = R.drawable.cat16384;
+		cellRectangleIds[15] = R.drawable.cat32768;
+		cellRectangleIds[16] = R.drawable.cat65536;
+		cellRectangleIds[17] = R.drawable.cat131072;
+		cellRectangleIds[18] = R.drawable.cat262144; 
+		for (int xx = 19; xx < cellRectangleIds.length; xx++) {
+			cellRectangleIds[xx] = R.drawable.cat262144;
+		}
+		return cellRectangleIds;
+	}
+
+	private void createOverlays() {
+		Resources resources = getResources();
+		//Initalize overlays
+		Bitmap bitmap = Bitmap.createBitmap(endingX - startingX, endingY - startingY, Bitmap.Config.ARGB_8888);
+		Canvas canvas = new Canvas(bitmap);
+		createEndGameStates(canvas, true, true);
+		winGameContinueOverlay = new BitmapDrawable(resources, bitmap);
+		bitmap = Bitmap.createBitmap(endingX - startingX, endingY - startingY, Bitmap.Config.ARGB_8888);
+		canvas = new Canvas(bitmap);
+		createEndGameStates(canvas, true, false);
+		winGameFinalOverlay = new BitmapDrawable(resources, bitmap);
+		bitmap = Bitmap.createBitmap(endingX - startingX, endingY - startingY, Bitmap.Config.ARGB_8888);
+		canvas = new Canvas(bitmap);
+		createEndGameStates(canvas, false, false);
+		loseGameOverlay = new BitmapDrawable(resources, bitmap);
+	}
+
+	private void tick() {
+		currentTime = System.nanoTime();
+		game.aGrid.tickAll(currentTime - lastFPSTime);
+		lastFPSTime = currentTime;
+	}
+
+	public void resyncTime() {
+		lastFPSTime = System.nanoTime();
+	}
+
+	private static int log2(int n) {
+		if (n <= 0) throw new IllegalArgumentException();
+		return 31 - Integer.numberOfLeadingZeros(n);
+	}
+
+	private void getLayout(int width, int height) {
+		cellSize = Math.min(width / (game.numSquaresX + 1), height / (game.numSquaresY + 3));
+		gridWidth = cellSize / 7;
+		mWidth =width;
+		mHeight = height;
+		int screenMiddleX = width / 2;
+		int screenMiddleY = height / 2;
+		int boardMiddleX = screenMiddleX;
+		int boardMiddleY = screenMiddleY + cellSize / 2;
+		iconSize = (int) (cellSize / 1.75 );
+
+		paint.setTextAlign(Paint.Align.CENTER);
+		paint.setTextSize(cellSize);
+		textSize = cellSize * cellSize / Math.max(cellSize, paint.measureText("0000"));
+		cellTextSize = textSize;
+		titleTextSize = textSize / 3;
+		bodyTextSize = (int) (textSize / 1.5);
+		instructionsTextSize = (int) (textSize / 2);
+		headerTextSize = textSize;// * 2;
+		gameOverTextSize = textSize * 2;
+		textPaddingSize = (int) (textSize / 3);
+		iconPaddingSize = (int) (textSize / 5);
+
+		//Grid Dimensions
+		double halfNumSquaresX = game.numSquaresX / 2d;
+		double halfNumSquaresY = game.numSquaresY / 2d;
+
+		startingX = (int) (boardMiddleX - (cellSize + gridWidth) * halfNumSquaresX - gridWidth / 2);
+		endingX = (int) (boardMiddleX + (cellSize + gridWidth) * halfNumSquaresX + gridWidth / 2);
+		startingY = (int) (boardMiddleY - (cellSize + gridWidth) * halfNumSquaresY - gridWidth / 2);
+		endingY = (int) (boardMiddleY + (cellSize + gridWidth) * halfNumSquaresY + gridWidth / 2);
+
+		paint.setTextSize(titleTextSize);
+
+		int textShiftYAll = centerText();
+		//static variables
+		sYAll = (int) (startingY - cellSize * 1.5);
+		titleStartYAll = (int) (sYAll + textPaddingSize + titleTextSize / 2 - textShiftYAll);
+		bodyStartYAll = (int) (titleStartYAll + textPaddingSize + titleTextSize / 2 + bodyTextSize / 2);
+
+		titleWidthHighScore = (int) (paint.measureText(getResources().getString(R.string.high_score)));
+		titleWidthScore = (int) (paint.measureText(getResources().getString(R.string.score)));
+		paint.setTextSize(bodyTextSize);
+		textShiftYAll = centerText();
+		eYAll = (int) (bodyStartYAll + textShiftYAll + bodyTextSize / 2 + textPaddingSize);
+
+		sYIcons = (startingY + eYAll) / 2 - iconSize / 2;
+		sXNewGame = (endingX - iconSize);
+		sXUndo = sXNewGame - iconSize * 3 / 3 - iconPaddingSize;
+		sXSettings = sXUndo - iconSize * 3 / 3 - iconPaddingSize;
+		resyncTime();
+	}
+
+	private int centerText() {
+		return (int) ((paint.descent() + paint.ascent()) / 2);
+	}
+
+	private Context mcontext;
+	private GameListener mGameListener;
+	public GameView(Context context,AchievementsUnlocked achment,  GameListener gameLsnr) {
+		super(context);
+
+		mcontext = context;
+		mGameListener = gameLsnr;
+		Resources resources = context.getResources();
+		//Loading resources
+		game = new GameLogic(context, achment , this , gameLsnr);
+		try {
+
+			//Getting assets 
+			backgroundRectangle = resources.getDrawable(R.drawable.background_rectangle); 
+			lightUpRectangle = resources.getDrawable(R.drawable.light_up_rectangle);
+			fadeRectangle = resources.getDrawable(R.drawable.fade_rectangle);
+			this.setBackgroundColor(resources.getColor(R.color.background));
+			Typeface font = Typeface.createFromAsset(resources.getAssets(), "ClearSans-Bold.ttf");
+			paint.setTypeface(font);
+			paint.setAntiAlias(true);
+		} catch (Exception e) {
+			System.out.println("Error getting assets?");
+		}
+		setOnTouchListener(new TouchListener(this, mcontext));
+		game.newGame();
+	}
+	
+	public void setOptionMenuCalled() {
+		mGameListener.showMenu();
+	}
+
+
+}
